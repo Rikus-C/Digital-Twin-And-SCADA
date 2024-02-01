@@ -1,0 +1,94 @@
+{
+	"Blue": {
+		"name": "Blue",
+		"hex": "#00CCFF"
+	},
+	"Green": {
+		"name": "Green",
+		"hex": "#39FF14"
+	},
+	"Pink": {
+		"name": "Pink",
+		"hex": "#FF0080"
+	},
+	"Yellow": {
+		"name": "Yellow",
+		"hex": "#FFFF00"
+	},
+	"Orange": {
+		"name": "Orange",
+		"hex": "#FFA500"
+	},
+	"Purple": {
+		"name": "Purple",
+		"hex": "#BF00FF"
+	},
+	"Red": {
+		"name": "Red",
+		"hex": "#FF0000"
+	},
+	"Teal": {
+		"name": "Teal",
+		"hex": "#00FFFF"
+	},
+	"Lime": {
+		"name": "Lime",
+		"hex": "#CCFF00"
+	},
+	"Coral": {
+		"name": "Coral",
+		"hex": "#FF7F50"
+	},
+	"Turquoise": {
+		"name": "Turquoise",
+		"hex": "#00FFEF"
+	},
+	"Fuchsia": {
+		"name": "Fuchsia",
+		"hex": "#FF00FF"
+	},
+	"Peach": {
+		"name": "Peach",
+		"hex": "#FFCBA4"
+	},
+	"Sky Blue": {
+		"name": "Sky Blue",
+		"hex": "#87CEEB"
+	},
+	"Lavender": {
+		"name": "Lavender",
+		"hex": "#B57EDC"
+	},
+	"Mint": {
+		"name": "Mint",
+		"hex": "#00FFC2"
+	},
+	"Grape": {
+		"name": "Grape",
+		"hex": "#9C51B6"
+	},
+	"Cherry": {
+		"name": "Cherry",
+		"hex": "#FF007F"
+	},
+	"Tangerine": {
+		"name": "Tangerine",
+		"hex": "#FFA07A"
+	},
+	"Salmon": {
+		"name": "Salmon",
+		"hex": "#FF8C69"
+	},
+	"White": {
+		"name": "White",
+		"hex": "#FFFFFF"
+	},
+	"Black": {
+		"name": "Black",
+		"hex": "#000000"
+	},
+	"_Specific": {
+		"name": "_Specific",
+		"hex": "#FFFFFF"
+	}
+}

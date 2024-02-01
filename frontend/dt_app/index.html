@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <title>Digital Twin</title>
+	<script src="./settings/websocket_settings.js"></script>
+    <script src="./imports/babylon.max.js"></script>
+	<script src="./imports/loader.js"></script>
+	<script src="./imports/sweetalert2.all.min.js"></script>
+	<script src="./scripts/sender.js"></script>
+	<script src="./scripts/frontend.js"></script>
+	<script src="./scripts/ReefCutter.js"></script>
+	<script src="./scripts/SBS.js"></script>
+	<script src="./scripts/listeners.js"></script>
+	<script src="./scripts/receiver.js"></script>
+	<link rel="stylesheet" type="text/css" href="./css/frontend.css">
+	<link rel="stylesheet" type="text/css" href="./css/ReefCutter.css">
+	<link rel="stylesheet" type="text/css" href="./css/SBS.css">
+</head>
+<body style="overflow: hidden;">
+	<div id="bodyDiv">	
+		<canvas id="canvas"></canvas>
+		
+		<div id='title-container'>
+			<h1 id='title'>Digital Twin LR</h1>
+			<img id='logo' src='./css/Logo.jpg' alt=''>
+		</div>
+		
+		<div id='generalButton' style='display: none;' class='arrowRight' onclick='ShowHideGeneral()'>
+		    <span></span>
+		    <span></span>
+		    <span></span>
+		</div>
+		
+		<div id='generalDiv' style='display: none; overflow: auto;'>
+			<div id='dataErrorSelect' class='dataErrorSelect'>
+				<div id='dataErrorSelect-button' class='dataErrorSelect-child'>
+					<input type='checkbox' id='dataErrorSelect-switch' class='dataErrorSelect-checkbox' onclick='DataErrorSelectChange(this);' checked />
+					<label for='dataErrorSelect-switch' class='dataErrorSelect-label'></label>
+				</div>
+				<div id='dataErrorSelect-text-left' class='dataErrorSelect-text-left'>
+					Error Tags
+				</div>
+				<div id='dataErrorSelect-text-right' class='dataErrorSelect-text-right'>
+					Data Tags
+				</div>
+			</div>
+			<table id='sensorTable' class='sensorTable'></table>
+		</div>
+		<div id='menuButton' style='display: none;' class='arrowUp' onclick='ShowHideMenu()'>
+		    <span></span>
+		    <span></span>
+		    <span></span>
+		</div>
+		
+		<div id='menuDiv' style='display: none;'>
+			<div id='meshSelect' class='meshSelect'>
+				<div id='meshSelect-button' class='meshSelect-child'>
+					<input type='checkbox' id='meshSelect-switch' class='meshSelect-checkbox' onclick='MeshSelectChange(this);'/>
+					<label for='meshSelect-switch' class='meshSelect-label'></label>
+				</div>
+				<div id='meshSelect-text' class='meshSelect-child'>
+					Deselect
+				</div>
+			</div>
+			<div id='reset' class='reset'>
+				<button id='reset-button' class='reset-button' onmouseup='ClearDeselectedMeshes();' type='button'></button>
+				<div id='reset-text' class='reset-child'>
+					Reset
+				</div>
+			</div>
+			<div id='block_tl_menu' class='block_menu'>
+				<button id='block_tl_menu-button' class='block_menu-button' onmouseup='Block_TL();' type='button'></button>
+				<div id='block_tl_menu-text' class='block_menu-child'>
+					Information
+				</div>
+			</div>
+			<div id='block_br_menu' class='block_menu'>
+				<button id='block_br_menu-button' class='block_menu-button' onmouseup='Block_BR();' type='button'></button>
+				<div id='block_br_menu-text' class='block_menu-child'>
+					BR
+				</div>
+			</div>
+			<div id='block_tr_menu' class='block_menu'>
+				<button id='block_tr_menu-button' class='block_menu-button' onmouseup='Block_TR();' type='button'></button>
+				<div id='block_tr_menu-text' class='block_menu-child'>
+					TR
+				</div>
+			</div>
+			<div id='block_bl_menu' class='block_menu'>
+				<button id='block_bl_menu-button' class='block_menu-button' onmouseup='Block_BL();' type='button'></button>
+				<div id='block_bl_menu-text' class='block_menu-child'>
+					BL
+				</div>
+			</div>
+			<div id='extra' class='extra'>
+				<button id='extra-button' class='extra-button' onmouseup='Extra_Button();' type='button'></button>
+				<div id='extra-text' class='extra-child'>
+					Extra
+				</div>
+			</div>
+			<div id='extra2' class='extra'>
+				<button id='extra2-button' class='extra-button' onmouseup='Extra2_Button();' type='button'></button>
+				<div id='extra2-text' class='extra-child'>
+					Extra2
+				</div>
+			</div>
+		</div>
+		
+		<div id="loader">
+			<div id="spinner"></div>
+		</div>
+		
+		<div id='block_tl' 		class='block_tl' 	style='display: none;'></div>
+		<div id='block_tr' 		class='block_tr' 	style='display: none;'></div>
+		<div id='block_tr2' 	class='block_tr2' 	style='display: none;'></div>
+		<div id='block_bl' 		class='block_bl' 	style='display: none;'></div>
+		<div id='block_br2' 	class='block_br2' 	style='display: none;'>
+			<select id="dropdown" 	class='replayLabel' onchange='ReplaySelect();'></select>
+			<section class='range-slider container'>
+				<span 	id='outputMin' 		class='output outputMin'>0</span>
+				<span 	id='outputMax' 		class='output outputMax'>100</span>
+				<span 	id='outputOne' 		class='output outputOne'></span>
+				<span 	id='outputTwo' 		class='output outputTwo'></span>
+				<span 	id='outputCurrent' 	class='output outputCurrent' style='display: none;'></span>
+				<span 	id='full-range' 	class='full-range'></span>
+				<span 	id='incl-range' 	class='incl-range'></span>
+				<input 	id='rangeOne' 		name='rangeOne' 	value='0' 	min='0' max='100' step='1' type='range' onclick='this.blur();' onmouseup='updateReplayRange(this);'>
+				<input 	id='rangeTwo' 		name='rangeTwo' 	value='100' min='0' max='100' step='1' type='range' onclick='this.blur();' onmouseup='updateReplayRange(this);'>
+				<div 	id='rangeCurrent' 	class='rangeCurrent' style='display: none;'></div>
+			</section>
+			<button id='play-button' 		class='play-button' 	onmouseup='Replay_Buttons(this);' type='button'>▶︎</button>
+			<button id='faster-button' 		class='faster-button' 	onmouseup='Replay_Buttons(this);' type='button'>▶︎▶︎</button>
+			<button id='fastest-button' 	class='fastest-button' 	onmouseup='Replay_Buttons(this);' type='button'>▶︎▶︎▶︎</button>
+			<button id='slower-button' 		class='slower-button' 	onmouseup='Replay_Buttons(this);' type='button'>◀︎◀︎</button>
+			<button id='slowest-button' 	class='slowest-button' 	onmouseup='Replay_Buttons(this);' type='button'>◀︎◀︎◀︎</button>
+			<button id='pause-button' 		class='pause-button' 	onmouseup='Replay_Buttons(this);' type='button'>||</button>
+		</div>
+		<div id='block_br' 		class='block_br' 	style='display: none;'></div>	
+		<div id='block_mr' 		class='block_mr' 	style='display: none;'></div>
+	</div>
+</body>
+</html>

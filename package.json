@@ -1,0 +1,38 @@
+{
+  "name": "Directional_Drilling_Plotter",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron start_electron.js",
+    "build": "electron-packager . electron-tutorial-app --overwrite --platform=win32 --arch=ia32 --icon=frontend/Control_Panel/CSS/App_Logo --prune=true --out=release-builds --version-string.CompanyName=Master Drilling --version-string.ProductName=Remote Drilling Control Panel"
+  },
+  "author": "Rikus (Frederik Jacobus) Coetzee",
+  "license": "ISC",
+  "dependencies": {
+    "ajax": "0.0.4",
+    "axios": "^0.27.2",
+    "body-parser": "^1.20.0",
+    "csv-headers": "^1.0.0",
+    "csv-parser": "^3.0.0",
+    "date-and-time": "^2.4.2",
+    "electron-create-shortcut": "^0.0.2",
+    "express": "^4.18.1",
+    "formidable": "^2.0.1",
+    "http": "0.0.1-security",
+    "jquery": "^3.6.0",
+    "modbus-tcp": "^0.4.13",
+    "modbus-tcp-ip": "^1.0.3",
+    "moment": "^2.29.4",
+    "nes.css": "^2.3.0",
+    "net": "^1.0.2",
+    "sweetalert2": "^11.4.23",
+    "three": "^0.141.0",
+    "three-orbitcontrols": "^2.110.3",
+    "ws": "^8.8.1"
+  },
+  "devDependencies": {
+    "electron": "^6.1.12",
+    "electron-packager": "^15.5.2"
+  },
+  "description": ""
+}

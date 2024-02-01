@@ -1,0 +1,1102 @@
+{
+	"(SBS) 9 deck stage model": {
+		"name": "(SBS) 9 deck stage model",
+		"filename": "(SBS) 9 deck stage model.glb",
+		"scale": 1,
+		"position": {
+			"x": -3,
+			"y": 17.98,
+			"z": -0.06
+		},
+		"rotation": {
+			"x": -1.57,
+			"y": 0,
+			"z": 3.14
+		},
+		"color": {
+			"r": 1,
+			"g": 1,
+			"b": 1
+		}
+	},
+	"(SBS) collector": {
+		"name": "(SBS) collector",
+		"filename": "(SBS) collector.glb",
+		"scale": 1,
+		"position": {
+			"x": 5.59,
+			"y": -14.185,
+			"z": 5.1
+		},
+		"rotation": {
+			"x": -1.57,
+			"y": 0,
+			"z": 0
+		},
+		"color": {
+			"r": 1,
+			"g": 1,
+			"b": 1
+		}
+	},
+	"(SBS) gripper body": {
+		"name": "(SBS) gripper body",
+		"filename": "(SBS) gripper body.glb",
+		"scale": 1,
+		"position": {
+			"x": 0,
+			"y": -16.46,
+			"z": 3.04
+		},
+		"rotation": {
+			"x": 0,
+			"y": 1.57,
+			"z": 0
+		},
+		"color": {
+			"r": 1,
+			"g": 1,
+			"b": 1
+		}
+	},
+	"(SBS) bottom section thrust": {
+		"name": "(SBS) bottom section thrust",
+		"filename": "(SBS) bottom section thrust.glb",
+		"scale": 1,
+		"position": {
+			"x": 0,
+			"y": -20.66,
+			"z": 3.04
+		},
+		"rotation": {
+			"x": 0,
+			"y": 0,
+			"z": 0
+		},
+		"color": {
+			"r": 1,
+			"g": 1,
+			"b": 1
+		}
+	},
+	"(SBS) stage landing": {
+		"name": "(SBS) stage landing",
+		"filename": "(SBS) stage landing.glb",
+		"scale": 1,
+		"position": {
+			"x": 0.02,
+			"y": -10.7,
+			"z": 3.04
+		},
+		"rotation": {
+			"x": 0,
+			"y": 0,
+			"z": 0
+		},
+		"color": {
+			"r": 1,
+			"g": 1,
+			"b": 1
+		}
+	},
+	"(SBS) top section thrust": {
+		"name": "(SBS) top section thrust",
+		"filename": "(SBS) top section thrust.glb",
+		"scale": 1,
+		"position": {
+			"x": 0,
+			"y": -20.8,
+			"z": 3.04
+		},
+		"rotation": {
+			"x": 0,
+			"y": 0,
+			"z": 0
+		},
+		"color": {
+			"r": 1,
+			"g": 1,
+			"b": 1
+		}
+	},
+	"(SBS) watertank 1": {
+		"name": "(SBS) watertank 1",
+		"filename": "(SBS) watertank.glb",
+		"scale": 1,
+		"position": {
+			"x": 0,
+			"y": -0.84,
+			"z": 2.92
+		},
+		"rotation": {
+			"x": 0,
+			"y": 3.14,
+			"z": 0
+		},
+		"color": {
+			"r": 1,
+			"g": 1,
+			"b": 1
+		}
+	},
+	"(SBS) watertank 2": {
+		"name": "(SBS) watertank 2",
+		"filename": "(SBS) watertank.glb",
+		"scale": 1,
+		"position": {
+			"x": 0,
+			"y": -0.84,
+			"z": 2.92
+		},
+		"rotation": {
+			"x": 0,
+			"y": 0,
+			"z": 0
+		},
+		"color": {
+			"r": 1,
+			"g": 1,
+			"b": 1
+		}
+	},
+	"(SBS) pump 1": {
+		"name": "(SBS) pump 1",
+		"filename": "(SBS) pump.glb",
+		"scale": 1,
+		"position": {
+			"x": -0.56,
+			"y": -2.14,
+			"z": 4.12
+		},
+		"rotation": {
+			"x": -1.57,
+			"y": 1.68,
+			"z": 0
+		},
+		"color": {
+			"r": 1,
+			"g": 1,
+			"b": 1
+		}
+	},
+	"(SBS) pump 2": {
+		"name": "(SBS) pump 2",
+		"filename": "(SBS) pump.glb",
+		"scale": 1,
+		"position": {
+			"x": 0.78,
+			"y": -2.14,
+			"z": 1.98
+		},
+		"rotation": {
+			"x": -1.57,
+			"y": -1.68,
+			"z": 0
+		},
+		"color": {
+			"r": 1,
+			"g": 1,
+			"b": 1
+		}
+	},
+	"(SBS) gearbox": {
+		"name": "(SBS) gearbox",
+		"filename": "(SBS) gearbox.glb",
+		"scale": 1,
+		"position": {
+			"x": 0,
+			"y": -22.23,
+			"z": 3.04
+		},
+		"rotation": {
+			"x": 1.571,
+			"y": -3.92,
+			"z": 0
+		},
+		"color": {
+			"r": 1,
+			"g": 1,
+			"b": 1
+		}
+	},
+	"(SBS) vent column": {
+		"name": "(SBS) vent column",
+		"filename": "(SBS) vent column.glb",
+		"scale": 1,
+		"position": {
+			"x": -0.04,
+			"y": 13.42,
+			"z": 4.48
+		},
+		"rotation": {
+			"x": 0,
+			"y": -3.14,
+			"z": 0
+		},
+		"color": {
+			"r": 1,
+			"g": 1,
+			"b": 1
+		}
+	},
+	"(SBS) rescue chamber": {
+		"name": "(SBS) rescue chamber",
+		"filename": "(SBS) rescue chamber.glb",
+		"scale": 1,
+		"position": {
+			"x": 0.01,
+			"y": 0.9,
+			"z": 2.94
+		},
+		"rotation": {
+			"x": 0,
+			"y": -3.14,
+			"z": 0
+		},
+		"color": {
+			"r": 1,
+			"g": 1,
+			"b": 1
+		}
+	},
+	"(SBS) compressor": {
+		"name": "(SBS) compressor",
+		"filename": "(SBS) compressor.glb",
+		"scale": 1,
+		"position": {
+			"x": -0.02,
+			"y": 3.02,
+			"z": 3.04
+		},
+		"rotation": {
+			"x": 0,
+			"y": -3.14,
+			"z": 0
+		},
+		"color": {
+			"r": 1,
+			"g": 1,
+			"b": 1
+		}
+	},
+	"(SBS) hydraulic motor and tank 1": {
+		"name": "(SBS) hydraulic motor and tank 1",
+		"filename": "(SBS) hydraulic motor and tank.glb",
+		"scale": 1,
+		"position": {
+			"x": 1.26,
+			"y": 5.34,
+			"z": 2.28
+		},
+		"rotation": {
+			"x": 1.57,
+			"y": -2.48,
+			"z": 0
+		},
+		"color": {
+			"r": 1,
+			"g": 1,
+			"b": 1
+		}
+	},
+	"(SBS) hydraulic motor and tank 2": {
+		"name": "(SBS) hydraulic motor and tank 2",
+		"filename": "(SBS) hydraulic motor and tank.glb",
+		"scale": 1,
+		"position": {
+			"x": 1.26,
+			"y": 5.34,
+			"z": 3.56
+		},
+		"rotation": {
+			"x": 1.57,
+			"y": -3.6,
+			"z": 0
+		},
+		"color": {
+			"r": 1,
+			"g": 1,
+			"b": 1
+		}
+	},
+	"(SBS) hydraulic motor and tank 3": {
+		"name": "(SBS) hydraulic motor and tank 3",
+		"filename": "(SBS) hydraulic motor and tank.glb",
+		"scale": 1,
+		"position": {
+			"x": -1.24,
+			"y": 5.34,
+			"z": 3.56
+		},
+		"rotation": {
+			"x": 1.57,
+			"y": 0.66,
+			"z": 0
+		},
+		"color": {
+			"r": 1,
+			"g": 1,
+			"b": 1
+		}
+	},
+	"(SBS) hydraulic motor and tank 4": {
+		"name": "(SBS) hydraulic motor and tank 4",
+		"filename": "(SBS) hydraulic motor and tank.glb",
+		"scale": 1,
+		"position": {
+			"x": -1.24,
+			"y": 5.34,
+			"z": 2.28
+		},
+		"rotation": {
+			"x": 1.57,
+			"y": -0.46,
+			"z": 0
+		},
+		"color": {
+			"r": 1,
+			"g": 1,
+			"b": 1
+		}
+	},
+	"(SBS) vacuum": {
+		"name": "(SBS) vacuum",
+		"filename": "(SBS) vacuum.glb",
+		"scale": 1,
+		"position": {
+			"x": -10.1,
+			"y": 14.92,
+			"z": 14.22
+		},
+		"rotation": {
+			"x": -1.56,
+			"y": 5.12,
+			"z": 0
+		},
+		"color": {
+			"r": 1,
+			"g": 1,
+			"b": 1
+		}
+	},
+	"(SBS) gripper block 1": {
+		"name": "(SBS) gripper block 1",
+		"filename": "(SBS) gripper block.glb",
+		"scale": 1,
+		"position": {
+			"x": 0.393,
+			"y": -17.415,
+			"z": 1.38
+		},
+		"rotation": {
+			"x": -1.57,
+			"y": 1.57,
+			"z": 0
+		},
+		"color": {
+			"r": 1,
+			"g": 1,
+			"b": 1
+		}
+	},
+	"(SBS) gripper block 2": {
+		"name": "(SBS) gripper block 2",
+		"filename": "(SBS) gripper block.glb",
+		"scale": 1,
+		"position": {
+			"x": -1.66,
+			"y": -17.415,
+			"z": 2.635
+		},
+		"rotation": {
+			"x": -1.57,
+			"y": 3.14,
+			"z": 0
+		},
+		"color": {
+			"r": 1,
+			"g": 1,
+			"b": 1
+		}
+	},
+	"(SBS) gripper block 3": {
+		"name": "(SBS) gripper block 3",
+		"filename": "(SBS) gripper block.glb",
+		"scale": 1,
+		"position": {
+			"x": -0.395,
+			"y": -17.415,
+			"z": 4.7
+		},
+		"rotation": {
+			"x": -1.57,
+			"y": -1.57,
+			"z": 0
+		},
+		"color": {
+			"r": 1,
+			"g": 1,
+			"b": 1
+		}
+	},
+	"(SBS) gripper block 4": {
+		"name": "(SBS) gripper block 4",
+		"filename": "(SBS) gripper block.glb",
+		"scale": 1,
+		"position": {
+			"x": 1.66,
+			"y": -17.415,
+			"z": 3.435
+		},
+		"rotation": {
+			"x": -1.57,
+			"y": 0,
+			"z": 0
+		},
+		"color": {
+			"r": 1,
+			"g": 1,
+			"b": 1
+		}
+	},
+	"(SBS) cutter head": {
+		"name": "(SBS) cutter head",
+		"filename": "(SBS) cutter head.glb",
+		"scale": 1,
+		"position": {
+			"x": 0,
+			"y": -24.52,
+			"z": 3.04
+		},
+		"rotation": {
+			"x": 1.57,
+			"y": -7.76,
+			"z": 0
+		},
+		"color": {
+			"r": 1,
+			"g": 1,
+			"b": 1
+		}
+	},
+	"(SBS) double disc 1": {
+		"name": "(SBS) double disc 1",
+		"filename": "(SBS) double disc.glb",
+		"scale": 1,
+		"position": {
+			"x": -0.04,
+			"y": -24.45,
+			"z": 2.7
+		},
+		"rotation": {
+			"x": 0.02,
+			"y": -4.63,
+			"z": -0.58
+		},
+		"color": {
+			"r": 1,
+			"g": 1,
+			"b": 1
+		}
+	},
+	"(SBS) double disc 2": {
+		"name": "(SBS) double disc 2",
+		"filename": "(SBS) double disc.glb",
+		"scale": 1,
+		"position": {
+			"x": 0.02,
+			"y": -24.43,
+			"z": 3.3
+		},
+		"rotation": {
+			"x": 0.02,
+			"y": -4.63,
+			"z": 0.64
+		},
+		"color": {
+			"r": 1,
+			"g": 1,
+			"b": 1
+		}
+	},
+	"(SBS) double disc 3": {
+		"name": "(SBS) double disc 3",
+		"filename": "(SBS) double disc.glb",
+		"scale": 1,
+		"position": {
+			"x": -0.28,
+			"y": -24.43,
+			"z": 3.07
+		},
+		"rotation": {
+			"x": -2.19,
+			"y": -4.63,
+			"z": -1.57
+		},
+		"color": {
+			"r": 1,
+			"g": 1,
+			"b": 1
+		}
+	},
+	"(SBS) double disc 4": {
+		"name": "(SBS) double disc 4",
+		"filename": "(SBS) double disc.glb",
+		"scale": 1,
+		"position": {
+			"x": 0.58,
+			"y": -24.67,
+			"z": 2.99
+		},
+		"rotation": {
+			"x": -1.03,
+			"y": -4.63,
+			"z": -1.57
+		},
+		"color": {
+			"r": 1,
+			"g": 1,
+			"b": 1
+		}
+	},
+	"(SBS) double disc 5": {
+		"name": "(SBS) double disc 5",
+		"filename": "(SBS) double disc.glb",
+		"scale": 1,
+		"position": {
+			"x": -0.06,
+			"y": -24.77,
+			"z": 2.3
+		},
+		"rotation": {
+			"x": 0.14,
+			"y": -4.73,
+			"z": -0.64
+		},
+		"color": {
+			"r": 1,
+			"g": 1,
+			"b": 1
+		}
+	},
+	"(SBS) double disc 6": {
+		"name": "(SBS) double disc 6",
+		"filename": "(SBS) double disc.glb",
+		"scale": 1,
+		"position": {
+			"x": 0.08,
+			"y": -24.69,
+			"z": 3.7
+		},
+		"rotation": {
+			"x": 0.14,
+			"y": -4.53,
+			"z": 0.6
+		},
+		"color": {
+			"r": 1,
+			"g": 1,
+			"b": 1
+		}
+	},
+	"(SBS) double disc 7": {
+		"name": "(SBS) double disc 7",
+		"filename": "(SBS) double disc.glb",
+		"scale": 1,
+		"position": {
+			"x": -0.72,
+			"y": -24.89,
+			"z": 2.44
+		},
+		"rotation": {
+			"x": 0.12,
+			"y": -3.91,
+			"z": -0.6
+		},
+		"color": {
+			"r": 1,
+			"g": 1,
+			"b": 1
+		}
+	},
+	"(SBS) double disc 8": {
+		"name": "(SBS) double disc 8",
+		"filename": "(SBS) double disc.glb",
+		"scale": 1,
+		"position": {
+			"x": 0.57,
+			"y": -24.74,
+			"z": 3.52
+		},
+		"rotation": {
+			"x": 0.14,
+			"y": -3.75,
+			"z": 0.66
+		},
+		"color": {
+			"r": 1,
+			"g": 1,
+			"b": 1
+		}
+	},
+	"(SBS) double disc 9": {
+		"name": "(SBS) double disc 9",
+		"filename": "(SBS) double disc.glb",
+		"scale": 1,
+		"position": {
+			"x": 0.86,
+			"y": -25.04,
+			"z": 2.3
+		},
+		"rotation": {
+			"x": -0.96,
+			"y": -3.91,
+			"z": -1.66
+		},
+		"color": {
+			"r": 1,
+			"g": 1,
+			"b": 1
+		}
+	},
+	"(SBS) double disc 10": {
+		"name": "(SBS) double disc 10",
+		"filename": "(SBS) double disc.glb",
+		"scale": 1,
+		"position": {
+			"x": -0.7,
+			"y": -24.9,
+			"z": 3.64
+		},
+		"rotation": {
+			"x": -2.24,
+			"y": -3.91,
+			"z": -1.66
+		},
+		"color": {
+			"r": 1,
+			"g": 1,
+			"b": 1
+		}
+	},
+	"(SBS) double disc 11": {
+		"name": "(SBS) double disc 11",
+		"filename": "(SBS) double disc.glb",
+		"scale": 1,
+		"position": {
+			"x": 0.1,
+			"y": -25.08,
+			"z": 4
+		},
+		"rotation": {
+			"x": -2.24,
+			"y": -2.93,
+			"z": -1.68
+		},
+		"color": {
+			"r": 1,
+			"g": 1,
+			"b": 1
+		}
+	},
+	"(SBS) double disc 12": {
+		"name": "(SBS) double disc 12",
+		"filename": "(SBS) double disc.glb",
+		"scale": 1,
+		"position": {
+			"x": -0.12,
+			"y": -25.1,
+			"z": 1.82
+		},
+		"rotation": {
+			"x": -4.1,
+			"y": -3.17,
+			"z": -1.66
+		},
+		"color": {
+			"r": 1,
+			"g": 1,
+			"b": 1
+		}
+	},
+	"(SBS) single disc 13": {
+		"name": "(SBS) single disc 13",
+		"filename": "(SBS) single disc.glb",
+		"scale": 1,
+		"position": {
+			"x": -0.58,
+			"y": -25.12,
+			"z": 2
+		},
+		"rotation": {
+			"x": -4.36,
+			"y": -2.73,
+			"z": -1.66
+		},
+		"color": {
+			"r": 1,
+			"g": 1,
+			"b": 1
+		}
+	},
+	"(SBS) double disc 14": {
+		"name": "(SBS) double disc 14",
+		"filename": "(SBS) double disc.glb",
+		"scale": 1,
+		"position": {
+			"x": 0.76,
+			"y": -25.16,
+			"z": 4.32
+		},
+		"rotation": {
+			"x": -4.78,
+			"y": -2.71,
+			"z": -1.68
+		},
+		"color": {
+			"r": 1,
+			"g": 1,
+			"b": 1
+		}
+	},
+	"(SBS) double disc 15": {
+		"name": "(SBS) double disc 15",
+		"filename": "(SBS) double disc.glb",
+		"scale": 1,
+		"position": {
+			"x": -0.96,
+			"y": -25.18,
+			"z": 2.26
+		},
+		"rotation": {
+			"x": -4.82,
+			"y": -2.69,
+			"z": -1.98
+		},
+		"color": {
+			"r": 1,
+			"g": 1,
+			"b": 1
+		}
+	},
+	"(SBS) single disc 16": {
+		"name": "(SBS) single disc 16",
+		"filename": "(SBS) single disc.glb",
+		"scale": 1,
+		"position": {
+			"x": 1.18,
+			"y": -25.2,
+			"z": 2.54
+		},
+		"rotation": {
+			"x": -3.06,
+			"y": -2.77,
+			"z": 0.12
+		},
+		"color": {
+			"r": 1,
+			"g": 1,
+			"b": 1
+		}
+	},
+	"(SBS) single disc 17": {
+		"name": "(SBS) single disc 17",
+		"filename": "(SBS) single disc.glb",
+		"scale": 1,
+		"position": {
+			"x": 1.04,
+			"y": -25.18,
+			"z": 3.9
+		},
+		"rotation": {
+			"x": -3.02,
+			"y": -3.87,
+			"z": 0.26
+		},
+		"color": {
+			"r": 1,
+			"g": 1,
+			"b": 1
+		}
+	},
+	"(SBS) double disc 18": {
+		"name": "(SBS) double disc 18",
+		"filename": "(SBS) double disc.glb",
+		"scale": 1,
+		"position": {
+			"x": 0.66,
+			"y": -25.18,
+			"z": 1.86
+		},
+		"rotation": {
+			"x": -5.18,
+			"y": -3.73,
+			"z": -1.66
+		},
+		"color": {
+			"r": 1,
+			"g": 1,
+			"b": 1
+		}
+	},
+	"(SBS) double disc 19": {
+		"name": "(SBS) double disc 19",
+		"filename": "(SBS) double disc.glb",
+		"scale": 1,
+		"position": {
+			"x": -0.7,
+			"y": -25.18,
+			"z": 4.26
+		},
+		"rotation": {
+			"x": -0.98,
+			"y": -3.51,
+			"z": -1.68
+		},
+		"color": {
+			"r": 1,
+			"g": 1,
+			"b": 1
+		}
+	},
+	"(SBS) double disc 20": {
+		"name": "(SBS) double disc 20",
+		"filename": "(SBS) double disc.glb",
+		"scale": 1,
+		"position": {
+			"x": 1.5,
+			"y": -25.1,
+			"z": 3.5
+		},
+		"rotation": {
+			"x": -3.34,
+			"y": -3.29,
+			"z": 0.64
+		},
+		"color": {
+			"r": 1,
+			"g": 1,
+			"b": 1
+		}
+	},
+	"(SBS) single disc 21": {
+		"name": "(SBS) single disc 21",
+		"filename": "(SBS) single disc.glb",
+		"scale": 1,
+		"position": {
+			"x": -1.54,
+			"y": -25.08,
+			"z": 2.58
+		},
+		"rotation": {
+			"x": -5.42,
+			"y": -1.99,
+			"z": -1.66
+		},
+		"color": {
+			"r": 1,
+			"g": 1,
+			"b": 1
+		}
+	},
+	"(SBS) double disc 22": {
+		"name": "(SBS) double disc 22",
+		"filename": "(SBS) double disc.glb",
+		"scale": 1,
+		"position": {
+			"x": 0.4,
+			"y": -25.02,
+			"z": 1.34
+		},
+		"rotation": {
+			"x": -5.4,
+			"y": -3.51,
+			"z": -1.66
+		},
+		"color": {
+			"r": 1,
+			"g": 1,
+			"b": 1
+		}
+	},
+	"(SBS) single disc 23": {
+		"name": "(SBS) single disc 23",
+		"filename": "(SBS) single disc.glb",
+		"scale": 1,
+		"position": {
+			"x": -0.38,
+			"y": -24.98,
+			"z": 4.76
+		},
+		"rotation": {
+			"x": -0.84,
+			"y": -3.23,
+			"z": -1.68
+		},
+		"color": {
+			"r": 1,
+			"g": 1,
+			"b": 1
+		}
+	},
+	"(SBS) single disc 24": {
+		"name": "(SBS) single disc 24",
+		"filename": "(SBS) single disc.glb",
+		"scale": 1,
+		"position": {
+			"x": -1.7,
+			"y": -24.94,
+			"z": 3.76
+		},
+		"rotation": {
+			"x": -5.56,
+			"y": -1.27,
+			"z": -1.62
+		},
+		"color": {
+			"r": 1,
+			"g": 1,
+			"b": 1
+		}
+	},
+	"(SBS) single disc 25": {
+		"name": "(SBS) single disc 25",
+		"filename": "(SBS) single disc.glb",
+		"scale": 1,
+		"position": {
+			"x": -0.88,
+			"y": -24.92,
+			"z": 1.4
+		},
+		"rotation": {
+			"x": -6.96,
+			"y": 0.59,
+			"z": -1.62
+		},
+		"color": {
+			"r": 1,
+			"g": 1,
+			"b": 1
+		}
+	},
+	"(SBS) single disc 26": {
+		"name": "(SBS) single disc 26",
+		"filename": "(SBS) single disc.glb",
+		"scale": 1,
+		"position": {
+			"x": 1.72,
+			"y": -24.89,
+			"z": 2.32
+		},
+		"rotation": {
+			"x": -0.56,
+			"y": -1.03,
+			"z": -1.68
+		},
+		"color": {
+			"r": 1,
+			"g": 1,
+			"b": 1
+		}
+	},
+	"(SBS) single disc 27": {
+		"name": "(SBS) single disc 27",
+		"filename": "(SBS) single disc.glb",
+		"scale": 1,
+		"position": {
+			"x": -1.44,
+			"y": -24.94,
+			"z": 4.26
+		},
+		"rotation": {
+			"x": -5.92,
+			"y": -1.01,
+			"z": -1.62
+		},
+		"color": {
+			"r": 1,
+			"g": 1,
+			"b": 1
+		}
+	},
+	"(SBS) single disc 28": {
+		"name": "(SBS) single disc 28",
+		"filename": "(SBS) single disc.glb",
+		"scale": 1,
+		"position": {
+			"x": 1,
+			"y": -24.91,
+			"z": 4.62
+		},
+		"rotation": {
+			"x": -0.48,
+			"y": -2.33,
+			"z": -1.68
+		},
+		"color": {
+			"r": 1,
+			"g": 1,
+			"b": 1
+		}
+	},
+	"(SBS) single disc 29": {
+		"name": "(SBS) single disc 29",
+		"filename": "(SBS) single disc.glb",
+		"scale": 1,
+		"position": {
+			"x": 1.46,
+			"y": -24.925,
+			"z": 4.2
+		},
+		"rotation": {
+			"x": -0.4,
+			"y": -1.99,
+			"z": -1.68
+		},
+		"color": {
+			"r": 1,
+			"g": 1,
+			"b": 1
+		}
+	},
+	"(SBS) single disc 30": {
+		"name": "(SBS) single disc 30",
+		"filename": "(SBS) single disc.glb",
+		"scale": 1,
+		"position": {
+			"x": 1.46,
+			"y": -24.91,
+			"z": 1.82
+		},
+		"rotation": {
+			"x": -0.32,
+			"y": -0.55,
+			"z": -1.68
+		},
+		"color": {
+			"r": 1,
+			"g": 1,
+			"b": 1
+		}
+	},
+	"(SBS) single disc 31": {
+		"name": "(SBS) single disc 31",
+		"filename": "(SBS) single disc.glb",
+		"scale": 1,
+		"position": {
+			"x": -1.46,
+			"y": -24.9,
+			"z": 1.82
+		},
+		"rotation": {
+			"x": -6.72,
+			"y": 0.97,
+			"z": -1.62
+		},
+		"color": {
+			"r": 1,
+			"g": 1,
+			"b": 1
+		}
+	}
+}

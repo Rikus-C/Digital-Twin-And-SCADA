@@ -1,0 +1,9 @@
+{
+    "Data Location":        "./backend/logs/data/",
+    "Error Location":       "./backend/logs/errors/",
+    "Backup Location":      "./backend/logs/backup/",
+    "Data Location Py":     "../../logs/data/",
+    "Error Location Py":    "../../logs/errors/",
+    "Backup Location Py":   "../../logs/backup/",
+    "Max Files In Folder":  20
+}

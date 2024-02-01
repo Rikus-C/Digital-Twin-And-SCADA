@@ -1,0 +1,443 @@
+{
+	"(ReefCutter) rbs-fb-090": {
+		"name": "(ReefCutter) rbs-fb-090",
+		"filename": "(ReefCutter) rbs-fb-090.glb",
+		"scale": 1,
+		"position": {
+			"x": 0,
+			"y": 0.6,
+			"z": 0
+		},
+		"rotation": {
+			"x": 3.14,
+			"y": 0,
+			"z": 0
+		},
+		"color": {
+			"r": 0.5,
+			"g": 0.5,
+			"b": 0.5
+		},
+		"group": "FrontBody"
+	},
+	"(ReefCutter) rbs-fb-298 tl": {
+		"name": "(ReefCutter) rbs-fb-298 tl",
+		"filename": "(ReefCutter) rbs-fb-298 tl.glb",
+		"scale": 1,
+		"position": {
+			"x": 0.8,
+			"y": 0.99,
+			"z": 0.14
+		},
+		"rotation": {
+			"x": 0,
+			"y": 0,
+			"z": 0
+		},
+		"color": {
+			"r": 1,
+			"g": 1,
+			"b": 1
+		},
+		"group": "FrontBody"
+	},
+	"(ReefCutter) rbs-fb-299 tr": {
+		"name": "(ReefCutter) rbs-fb-299 tr",
+		"filename": "(ReefCutter) rbs-fb-299 tr.glb",
+		"scale": 1,
+		"position": {
+			"x": -0.8,
+			"y": 0.99,
+			"z": 0.14
+		},
+		"rotation": {
+			"x": 0,
+			"y": 0,
+			"z": 0
+		},
+		"color": {
+			"r": 1,
+			"g": 1,
+			"b": 1
+		},
+		"group": "FrontBody"
+	},
+	"(ReefCutter) rbs-fb-300 bl": {
+		"name": "(ReefCutter) rbs-fb-300 bl",
+		"filename": "(ReefCutter) rbs-fb-300 bl.glb",
+		"scale": 1,
+		"position": {
+			"x": 0.8,
+			"y": 0.99,
+			"z": -0.145
+		},
+		"rotation": {
+			"x": 0,
+			"y": -3.14,
+			"z": 0
+		},
+		"color": {
+			"r": 1,
+			"g": 1,
+			"b": 1
+		},
+		"group": "FrontBody"
+	},
+	"(ReefCutter) rbs-fb-301 br": {
+		"name": "(ReefCutter) rbs-fb-301 br",
+		"filename": "(ReefCutter) rbs-fb-301 br.glb",
+		"scale": 1,
+		"position": {
+			"x": -0.8,
+			"y": 0.99,
+			"z": -0.145
+		},
+		"rotation": {
+			"x": 0,
+			"y": -3.14,
+			"z": 0
+		},
+		"color": {
+			"r": 1,
+			"g": 1,
+			"b": 1
+		},
+		"group": "FrontBody"
+	},
+	"(ReefCutter) rbs-tb-ga-000": {
+		"name": "(ReefCutter) rbs-tb-ga-000",
+		"filename": "(ReefCutter) rbs-tb-ga-000.glb",
+		"scale": 1,
+		"position": {
+			"x": 0,
+			"y": -2,
+			"z": 0
+		},
+		"rotation": {
+			"x": 0,
+			"y": 0,
+			"z": -3.14
+		},
+		"color": {
+			"r": 0.5,
+			"g": 0.5,
+			"b": 0.5
+		},
+		"group": "ThrustBody"
+	},
+	"(ReefCutter) rbs-fb-248 l": {
+		"name": "(ReefCutter) rbs-fb-248 l",
+		"filename": "(ReefCutter) rbs-fb-248.glb",
+		"scale": 1,
+		"position": {
+			"x": 1.06,
+			"y": -0.005,
+			"z": 0
+		},
+		"rotation": {
+			"x": 0,
+			"y": 0,
+			"z": 0
+		},
+		"color": {
+			"r": 1,
+			"g": 1,
+			"b": 1
+		},
+		"group": "FrontBody"
+	},
+	"(ReefCutter) rbs-fb-248 r": {
+		"name": "(ReefCutter) rbs-fb-248 r",
+		"filename": "(ReefCutter) rbs-fb-248.glb",
+		"scale": 1,
+		"position": {
+			"x": -1.06,
+			"y": -0.005,
+			"z": 0
+		},
+		"rotation": {
+			"x": 0,
+			"y": -3.14,
+			"z": 0
+		},
+		"color": {
+			"r": 1,
+			"g": 1,
+			"b": 1
+		},
+		"group": "FrontBody"
+	},
+	"(ReefCutter) rbs-fb-253 l": {
+		"name": "(ReefCutter) rbs-fb-253 l",
+		"filename": "(ReefCutter) rbs-fb-253.glb",
+		"scale": 1,
+		"position": {
+			"x": 1.093,
+			"y": -0.575,
+			"z": -0.17
+		},
+		"rotation": {
+			"x": 0,
+			"y": -1.57,
+			"z": 0
+		},
+		"color": {
+			"r": 1,
+			"g": 1,
+			"b": 1
+		},
+		"group": "FrontBody"
+	},
+	"(ReefCutter) rbs-fb-253 r": {
+		"name": "(ReefCutter) rbs-fb-253 r",
+		"filename": "(ReefCutter) rbs-fb-253.glb",
+		"scale": 1,
+		"position": {
+			"x": -1.092,
+			"y": -0.575,
+			"z": -0.17
+		},
+		"rotation": {
+			"x": 0,
+			"y": -1.57,
+			"z": 0
+		},
+		"color": {
+			"r": 1,
+			"g": 1,
+			"b": 1
+		},
+		"group": "FrontBody"
+	},
+	"(ReefCutter) rbs-tc-160-ca-00 l bar": {
+		"name": "(ReefCutter) rbs-tc-160-ca-00 l bar",
+		"filename": "(ReefCutter) rbs-tc-160-ca-00 bar.glb",
+		"scale": 1,
+		"position": {
+			"x": 1.4,
+			"y": -0.84,
+			"z": 0.14
+		},
+		"rotation": {
+			"x": 3.14,
+			"y": 0,
+			"z": 0
+		},
+		"color": {
+			"r": 1,
+			"g": 1,
+			"b": 1
+		},
+		"group": "CylTL"
+	},
+	"(ReefCutter) rbs-tc-160-ca-00 r bar": {
+		"name": "(ReefCutter) rbs-tc-160-ca-00 r bar",
+		"filename": "(ReefCutter) rbs-tc-160-ca-00 bar.glb",
+		"scale": 1,
+		"position": {
+			"x": -1.42,
+			"y": -0.84,
+			"z": 0.14
+		},
+		"rotation": {
+			"x": 3.14,
+			"y": 0,
+			"z": 0
+		},
+		"color": {
+			"r": 1,
+			"g": 1,
+			"b": 1
+		},
+		"group": "CylTR"
+	},
+	"(ReefCutter) rbs-tc-190-ca-00 l bar": {
+		"name": "(ReefCutter) rbs-tc-190-ca-00 l bar",
+		"filename": "(ReefCutter) rbs-tc-190-ca-00 bar.glb",
+		"scale": 1,
+		"position": {
+			"x": -1.42,
+			"y": -1,
+			"z": -0.14
+		},
+		"rotation": {
+			"x": 0,
+			"y": 0,
+			"z": -1.57
+		},
+		"color": {
+			"r": 1,
+			"g": 1,
+			"b": 1
+		},
+		"group": "CylBR"
+	},
+	"(ReefCutter) rbs-tc-190-ca-00 r bar": {
+		"name": "(ReefCutter) rbs-tc-190-ca-00 r bar",
+		"filename": "(ReefCutter) rbs-tc-190-ca-00 bar.glb",
+		"scale": 1,
+		"position": {
+			"x": 1.42,
+			"y": -1,
+			"z": -0.14
+		},
+		"rotation": {
+			"x": 0,
+			"y": 0,
+			"z": -1.57
+		},
+		"color": {
+			"r": 1,
+			"g": 1,
+			"b": 1
+		},
+		"group": "CylBL"
+	},
+	"(ReefCutter) rbs-tc-160-ca-00 l rod": {
+		"name": "(ReefCutter) rbs-tc-160-ca-00 l rod",
+		"filename": "(ReefCutter) rbs-tc-160-ca-00 rod.glb",
+		"scale": 1,
+		"position": {
+			"x": 0,
+			"y": 0.13799990499285473,
+			"z": 0
+		},
+		"rotation": {
+			"x": 3.14,
+			"y": 0,
+			"z": 0
+		},
+		"color": {
+			"r": 1,
+			"g": 1,
+			"b": 1
+		},
+		"group": "CylTL"
+	},
+	"(ReefCutter) rbs-tc-160-ca-00 r rod": {
+		"name": "(ReefCutter) rbs-tc-160-ca-00 r rod",
+		"filename": "(ReefCutter) rbs-tc-160-ca-00 rod.glb",
+		"scale": 1,
+		"position": {
+			"x": 0,
+			"y": 0.1379999049928573,
+			"z": 0
+		},
+		"rotation": {
+			"x": 3.14,
+			"y": 0,
+			"z": 0
+		},
+		"color": {
+			"r": 1,
+			"g": 1,
+			"b": 1
+		},
+		"group": "CylTR"
+	},
+	"(ReefCutter) rbs-tc-190-ca-00 l rod": {
+		"name": "(ReefCutter) rbs-tc-190-ca-00 l rod",
+		"filename": "(ReefCutter) rbs-tc-190-ca-00 rod.glb",
+		"scale": 1,
+		"position": {
+			"x": 0,
+			"y": 0.13800009500714323,
+			"z": 0
+		},
+		"rotation": {
+			"x": 0,
+			"y": 0,
+			"z": -1.57
+		},
+		"color": {
+			"r": 1,
+			"g": 1,
+			"b": 1
+		},
+		"group": "CylBR"
+	},
+	"(ReefCutter) rbs-tc-190-ca-00 r rod": {
+		"name": "(ReefCutter) rbs-tc-190-ca-00 r rod",
+		"filename": "(ReefCutter) rbs-tc-190-ca-00 rod.glb",
+		"scale": 1,
+		"position": {
+			"x": 0,
+			"y": 0.13800009500714523,
+			"z": 0
+		},
+		"rotation": {
+			"x": 0,
+			"y": 0,
+			"z": -1.57
+		},
+		"color": {
+			"r": 1,
+			"g": 1,
+			"b": 1
+		},
+		"group": "CylBL"
+	},
+	"(ReefCutter) rbs-tb-gf-gf-1-fm l": {
+		"name": "(ReefCutter) rbs-tb-gf-gf-1-fm l",
+		"filename": "(ReefCutter) rbs-tb-gf-gf-1-fm.glb",
+		"scale": 1,
+		"position": {
+			"x": 2.005,
+			"y": -0.65,
+			"z": 0
+		},
+		"rotation": {
+			"x": 0,
+			"y": 0,
+			"z": 0
+		},
+		"color": {
+			"r": 1,
+			"g": 1,
+			"b": 1
+		},
+		"group": "ThrustBody"
+	},
+	"(ReefCutter) rbs-tb-gf-gf-1-fm r": {
+		"name": "(ReefCutter) rbs-tb-gf-gf-1-fm r",
+		"filename": "(ReefCutter) rbs-tb-gf-gf-1-fm.glb",
+		"scale": 1,
+		"position": {
+			"x": 0,
+			"y": -0.65,
+			"z": 0
+		},
+		"rotation": {
+			"x": 0,
+			"y": 0,
+			"z": 0
+		},
+		"color": {
+			"r": 1,
+			"g": 1,
+			"b": 1
+		},
+		"group": "ThrustBody"
+	},
+	"(ReefCutter) rbs-pc-091": {
+		"name": "(ReefCutter) rbs-pc-091",
+		"filename": "(ReefCutter) rbs-pc-091.glb",
+		"scale": 1,
+		"position": {
+			"x": 0,
+			"y": 0.46,
+			"z": -0.04
+		},
+		"rotation": {
+			"x": -1.57,
+			"y": 0,
+			"z": 0
+		},
+		"color": {
+			"r": 1,
+			"g": 1,
+			"b": 1
+		},
+		"group": "FrontBody"
+	}
+}

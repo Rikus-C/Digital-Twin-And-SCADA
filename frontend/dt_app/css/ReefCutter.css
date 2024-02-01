@@ -1,0 +1,322 @@
+.ViewPos
+{
+	width:  	12vw;
+	top:  		0.2vw;
+	left:  		0.2vw;
+	position:	absolute;
+	z-index:	10;
+}
+.MikkerPos
+{
+	width:  	14.4vw;
+	top:  		-0.9vw;
+	left:  		-1vw;
+	position:	absolute;
+	z-index:	11;
+}
+.MikkerPosLine
+{
+	width:  	12.8vw;
+	top:  		0.1vw;
+	left:  		-0.15vw;
+	position:	absolute;
+	z-index:	12;
+}
+.MikkerPosLineFlip
+{
+	width:  	12.8vw;
+	top:  		-0.1vw;
+	left:  		-0.3vw;
+	position:	absolute;
+	z-index:	12;
+	transform:	rotate(90deg);
+}
+.ViewRot
+{
+	width:  	12vw;
+	top:  		0.25vw;
+	right:  	0.5vw;
+	position:	absolute;
+	z-index:	10;
+}
+.MikkerRot
+{
+	width:  	13vw;
+	top:  		0vw;
+	right:  	0vw;
+	position:	absolute;
+	z-index:	11;
+}
+.MikkerRotLine
+{
+	width:  	13vw;
+	top:  		0vw;
+	right:  	0vw;
+	position:	absolute;
+	z-index:	12;
+}
+
+.PosLabel
+{
+	top:  		10.6vw;
+	left:  		5.9vw;
+	position:	absolute;
+	z-index:	13;
+}
+.PosLabelFlip
+{
+	top:  		4.9vw;
+	left:  		0.3vw;
+	position:	absolute;
+	z-index:	13;
+}
+.RotLabel
+{
+	top:  		10.75vw;
+	right:  	6.25vw;
+	position:	absolute;
+	z-index:	13;
+}
+.Pos1
+{
+	top:		28%;
+	left: 		39%;
+	position:	absolute;
+	z-index:	13;
+}
+.Pos2
+{
+	top:		38%;
+	left: 		39%;
+	position:	absolute;
+	z-index:	13;
+}
+.Rot
+{
+	top:		48%;
+	left: 		39%;
+	position:	absolute;
+	z-index:	13;
+}
+.backTL
+{
+	top:		18%;
+	left: 		18%;
+	position:	absolute;
+	z-index:	10;
+}
+.rodTL
+{
+	top:		18%;
+	left: 		18%;
+	position:	absolute;
+	z-index:	11;
+}
+.barTL
+{
+	top:		18%;
+	left: 		18%;
+	position:	absolute;
+	z-index:	12;
+}
+
+.sheet 
+{
+	position: 	absolute;
+	left: 		10px;
+	top: 		24%;
+	width: 		calc(100% - 20px);
+	height: 	calc(76% - 10px);
+	display: 	none;
+}
+.sheet.child
+{
+	align:	center;
+}
+.page-button
+{
+	position: 			relative;
+	top: 				10px;
+	left: 				10px;
+	padding: 			10px 15px;
+	background: 		grey;
+	display: 			inline-block;
+	border-radius: 		10px;
+	outline:			none;
+	color:				white;
+}
+.smallBack 
+{
+	position: 	absolute;
+	height: 	calc(100% - 10px);
+	display: 	block;
+	z-index:	11;
+	border:		solid 5px white;
+}
+.thrustPic 
+{
+	position: 	relative;
+	top: 		3.1vw;
+	float:		left;
+	width: 		4.1vw;
+	transform:	rotate(-90deg);
+	display: 	block;
+	z-index:	12;
+}
+.stabilPic 
+{
+	position: 	relative;
+	top: 		2.6vw;
+	float:		left;
+	width: 		3.9vw;
+	display: 	block;
+	z-index:	12;
+}
+.gripperPic 
+{
+	position: 	relative;
+	top:		25%;
+	left:		18%;
+	float:		left;
+	width: 		2.5vw;
+	display: 	block;
+	z-index:	12;
+}
+.cutterPic 
+{
+	position: 	relative;
+	top: 		3.8vw;
+	float:		left;
+	width: 		3.95vw;
+	transform:	rotate(-90deg);
+	display: 	block;
+	z-index:	12;
+}
+.smallTable 
+{
+	position: 	absolute;
+	right: 		10%;
+	top: 		10%;
+	float:		left;
+	z-index:	12;
+}
+.smallTableGrip
+{
+	position: 	absolute;
+	right: 		10%;
+	top: 		10%;
+	float:		right;
+	z-index:	12;
+	width:      10vw;
+}
+.smallTableThrust
+{
+	position: 	absolute;
+	right: 		2.5%;
+	top: 		10%;
+	width:		12.5vw;
+	float:		left;
+	z-index:	12;
+}
+#sheetThrust
+{
+	left: 	13px;
+}
+#sheetStabil
+{
+	left: 	13px;
+}
+#sheetGripper
+{
+	left: 	13px;
+}
+#sheetCutter
+{
+	left: 	13px;
+}
+
+#sheetGeneral::-webkit-scrollbar 
+{
+	width: 		8px;
+}
+#sheetGeneral::-webkit-scrollbar-track 
+{
+	background-color: 	transparent;
+}
+#sheetGeneral::-webkit-scrollbar-thumb 
+{
+	background-color: 	rgba(0, 0, 0, 0.3);
+	border-radius: 		4px;
+}
+#sheetGeneral::-webkit-scrollbar-thumb:hover 
+{
+	background-color: 	rgba(0, 0, 0, 0.5);
+}
+#sheetGeneral::-webkit-scrollbar-thumb:active 
+{ 
+	background-color: 	rgba(0, 0, 0, 0.7);
+}
+
+/*Path button CSS*/
+.rf-path
+{
+	width:		calc(12vh - 20px);
+	height:		50px;
+	display:	block;
+	left:		0.5vh;
+	position:	relative;
+}
+.rf-path-button
+{	
+	width:			calc(12vh - 20px);
+	height: 		25px;
+	background: 	grey;
+	display: 		block;
+	border-radius: 	50px;
+	outline:		none;
+}
+.rf-path-child
+{
+	width:		calc(12vh - 20px);
+	text-align:	center;
+}
+
+/*All button CSS*/
+.rf-all
+{
+	width:		calc(12vh - 20px);
+	height:		50px;
+	display:	block;
+	left:		0.5vh;
+	position:	relative;
+}
+.rf-all-button
+{	
+	width:			calc(12vh - 20px);
+	height: 		25px;
+	background: 	grey;
+	display: 		block;
+	border-radius: 	50px;
+	outline:		none;
+}
+.rf-all-child
+{
+	width:		calc(12vh - 20px);
+	text-align:	center;
+}
+.rf-line-top
+{
+	width:		calc(12vh - 20px);
+	height:		10px;
+}
+.rf-line-child
+{
+	width:		calc(12vh - 20px);
+	height:		1px;
+	background:	white;
+}
+.rf-line-bottom
+{
+	width:		calc(12vh - 20px);
+	height:		10px;
+}

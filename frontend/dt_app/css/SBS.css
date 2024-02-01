@@ -1,0 +1,387 @@
+#steering-circle-div
+{
+	width: 				calc(23vw + 1px);
+	height: 			calc(23vw + 1px);
+	border-radius: 		11.7vw;
+	left: 				4vw;
+	top: 				2vw;
+	position: 			relative;
+	background-color: 	rgba(0, 0, 0, 0);
+	user-select:		none;
+}
+
+#steering-table
+{
+	position: 			absolute;
+	width: 				80%;
+	top:				67%;
+	left:				10%;
+}
+
+#steering-circle
+{
+	position: 			absolute;
+	width: 				117%;
+	height: 			117%;
+	left:				-8.5%;
+	top:				-8.5%;
+	z-index:			11;
+}
+
+#steering-sbs-top 
+{
+	width: 				22vw;
+	height: 			22vw;
+	position: 			relative;
+	left:				calc(0.5vw + 2px);
+	top:				calc(0.8vw - 2px);
+	user-select:		none;
+	z-index:			12;
+	opacity: 			1; 
+}
+
+#steering-sbs-gripper-top 
+{
+	width: 				calc(11vw / 3);
+	height: 			calc(19vw / 3);
+	position: 			relative;
+	left:				5.9vw;
+	user-select:		none;
+	z-index:			11;
+	transform:			rotate(90deg);
+}
+
+#steering-sbs-gripper-right 
+{
+	width: 				calc(11vw / 3);
+	height: 			calc(19vw / 3);
+	position: 			relative;
+	top:				-14.2vw;
+	user-select:		none;
+	z-index:			11;
+	transform:			rotate(180deg);
+}
+
+#steering-sbs-gripper-bottom 
+{
+	width: 				calc(11vw / 3);
+	height: 			calc(19vw / 3);
+	position: 			relative;
+	left:				2.5vw;
+	user-select:		none;
+	z-index:			11;
+	transform:			rotate(270deg);
+}
+
+#steering-sbs-gripper-left 
+{
+	width: 				calc(11vw / 3);
+	height: 			calc(19vw / 3);
+	position: 			relative;
+	top:				-14.2vw;
+	user-select:		none;
+	z-index:			11;
+	transform:			rotate(1deg);
+}
+
+.cutter-base
+{
+	width: 			calc(100% - 40px);
+	height: 		auto;
+	position: 		absolute;
+	left:			15px;
+	top:			15px; 
+	border: 		5px solid white;
+	border-radius: 	10px;
+	z-index:		10;
+}
+
+.cutter-warn
+{
+	z-index:		11;
+	width: 			calc(100% - 40px);
+	height: 		auto;
+	position: 		absolute;
+	left:			15px;
+	top:			15px; 
+	border: 		5px solid white;
+	border-radius: 	10px;
+	display: 		none;
+}
+
+.cutter-err
+{
+	z-index:		11;
+	width: 			calc(100% - 40px);
+	height: 		auto;
+	position: 		absolute;
+	left:			15px;
+	top:			15px;
+	border: 		5px solid white;
+	border-radius: 	10px;
+	display: 		none;
+}
+
+.cutter-table
+{
+	z-index:		12;
+	width: 			80%;
+	left:			10%;
+	height: 		auto;
+	position: 		absolute;
+	top:			315px;
+}
+
+.thrust-back
+{
+	width: 			calc(100% - 40px);
+	height: 		auto;
+	position: 		absolute;
+	left:			15px;
+	top:			15px; 
+	border: 		5px solid white;
+	border-radius: 	10px;
+	z-index:		10;
+}
+
+.thrust-top
+{
+	width: 			calc(100% - 40px);
+	height: 		auto;
+	position: 		absolute;
+	left:			15px;
+	top:			15px; 
+	border: 		5px solid rgba(0, 0, 0, 0);
+	border-radius: 	10px;
+	z-index:		12;
+}
+
+.thrust-bot
+{
+	width: 				calc(100% - 40px);	
+	height: 			auto;
+	position: 			absolute;
+	left:				18px;
+	top:				84px; 
+	border: 			5px solid rgba(0, 0, 0, 0);
+	border-radius: 		10px;
+	z-index:			11;
+}
+
+.thrust-table
+{
+	z-index:		12;
+	height: 		auto;
+	position: 		absolute;
+	width: 			80%;
+	left:			10%;
+	top:			380px;
+}
+
+#bunker-div
+{
+	width: 				calc(21vw + 1px);
+	height: 			calc(21vw + 1px);
+	border-radius: 		11.7vw;
+	left: 				4vw;
+	top: 				2vw;
+	position: 			relative;
+	background-color: 	rgba(0, 0, 0, 0);
+	user-select:		none;
+}
+
+#bunker-back
+{
+	position: 		absolute;
+	border: 		5px solid white;
+	width: 			117%;
+	height: 		117%;
+	left:			-8.5%;
+	top:			0%;
+	z-index:		10;
+}	
+	
+#bunker-mid-left
+{	
+	width: 			8vw;
+	height: 		13.5vw;
+	position: 		absolute;
+	left:			calc(0.5vw + 2px);
+	bottom:			-18%;
+	user-select:	none;
+	z-index:		12;
+}	
+	
+#bunker-mid-right
+{	
+	width: 			8vw;
+	height: 		5.5vw;
+	position: 		absolute;
+	right:			-2px;
+	bottom:			-18%;
+	user-select:	none;
+	z-index:		12;
+}	
+	
+#bunker-front	
+{	
+	position: 		absolute;
+	border: 		5px solid white;
+	width: 			117%;
+	height: 		117%;
+	left:			-8.5%;
+	top:			0%;
+	z-index:		12;
+	opacity:		1;
+}	
+	
+.bunker-extra	
+{	
+	position: 		absolute;
+	border: 		5px solid white;
+	width: 			117%;
+	height: 		117%;
+	left:			-8.5%;
+	top:			0%;
+	z-index:		13;
+	opacity:		1;
+	display	: 		none;
+}	
+
+.bunker-table
+{
+	z-index:	12;
+	height: 	auto;
+	position: 	absolute;
+	width: 		80%;
+	left:		10%;
+	top:		300px;
+}
+
+/*CSS for menu information div and buttons*/
+.arrowDown 
+{
+    position: 	absolute;
+    top: 		3.2vw;
+    left: 		50%;
+    transform: 	translate(-50%, -50%);
+    cursor: 	pointer;
+	z-index:	10;
+}
+.arrowDown span 
+{
+    display: 		block;
+    width: 			1.5vw;
+    height: 		1.5vw;
+    border-bottom: 	5px solid white;
+    border-right: 	5px solid white;
+    transform: 		rotate(45deg);
+    margin: 		-10px;
+    animation: 		animate 2s infinite;
+}
+.arrowDown span:nth-child(2) 
+{
+    animation-delay: -0.2s;
+}
+.arrowDown span:nth-child(3)
+{
+    animation-delay: -0.4s;
+}
+#chartDiv
+{
+	position: 			fixed;
+	top: 				0;
+	left: 				50%;
+	height:				328px;
+	width:				100%;
+	transform:			translateX(-50%);
+	z-index: 			9;
+	background-color: 	rgb(61,69,71);
+	border-bottom: 		5px solid white;
+	color:				white;
+}
+.chartDiv::-webkit-scrollbar 
+{
+	width: 		8px;
+}
+.chartDiv::-webkit-scrollbar-track 
+{
+	background-color: 	transparent;
+}
+.chartDiv::-webkit-scrollbar-thumb 
+{
+	background-color: 	rgba(0, 0, 0, 0.3);
+	border-radius: 		4px;
+}
+.chartDiv::-webkit-scrollbar-thumb:hover 
+{
+  background-color: 	rgba(0, 0, 0, 0.5);
+}
+.chartDiv::-webkit-scrollbar-thumb:active 
+{
+  background-color: 	rgba(0, 0, 0, 0.7);
+}
+
+/*Path button CSS*/
+.sbs-path
+{
+	width:		calc(12vw - 20px);
+	height:		50px;
+	display:	block;
+	left:		0.5vw;
+	position:	relative;
+}
+.sbs-path-button
+{	
+	width:			calc(12vw - 20px);
+	height: 		25px;
+	background: 	grey;
+	display: 		block;
+	border-radius: 	50px;
+	outline:		none;
+}
+.sbs-path-child
+{
+	width:		calc(12vw - 20px);
+	text-align:	center;
+}
+
+/*All button CSS*/
+.sbs-all
+{
+	width:		calc(12vw - 20px);
+	height:		50px;
+	display:	block;
+	left:		0.5vw;
+	position:	relative;
+}
+.sbs-all-button
+{	
+	width:			calc(12vw - 20px);
+	height: 		25px;
+	background: 	grey;
+	display: 		block;
+	border-radius: 	50px;
+	outline:		none;
+}
+.sbs-all-child
+{
+	width:		calc(12vw - 20px);
+	text-align:	center;
+}
+.sbs-line-top
+{
+	width:		calc(12vw - 20px);
+	height:		10px;
+}
+.sbs-line-child
+{
+	width:		calc(12vw - 20px);
+	height:		1px;
+	background:	white;
+}
+.sbs-line-bottom
+{
+	width:		calc(12vw - 20px);
+	height:		10px;
+}

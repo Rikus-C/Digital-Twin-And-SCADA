@@ -1,0 +1,467 @@
+html, body 
+{
+	height:							100%;
+    font-family: 					Arial, Helvetica, sans-serif;
+    text-align: 					center;
+    background-image: 				url('./HMI_Background.jpg');
+    background-repeat: 				repeat;
+    right: 							0;
+    left: 							0;
+    top: 							0;
+    -webkit-tap-highlight-color: 	rgba(255, 255, 255, 0);
+    -webkit-user-select: 			none;
+    user-select: 					none;
+    overflow: 						hidden;
+}
+
+#reef-left-div
+{
+	left:	5px;
+}
+
+#reef-right-div
+{
+	right:		5px;
+	direction:	rtl;
+}
+
+.reef-div 
+{
+	position: 			fixed;
+	top: 				5px;
+	right: 				5px;
+	z-index: 			9999;
+	width: 				47.8125vh; 				/*9:16 aspect ratio*/
+	height: 			calc(90vh - 15px);		/*9:16 aspect ratio*/	
+	border: 			5px solid white;
+	border-radius: 		10px;
+	overflow: 			auto;
+	box-sizing: 		border-box;
+	background-color: 	rgb(61,69,71);
+}
+
+.reef-div::-webkit-scrollbar 
+{
+	width: 		8px;
+}
+
+.reef-div::-webkit-scrollbar-track 
+{
+	background-color: 	transparent;
+}
+
+.reef-div::-webkit-scrollbar-thumb 
+{
+	background-color: 	rgba(0, 0, 0, 0.3);
+	border-radius: 		4px;
+}
+
+.reef-div::-webkit-scrollbar-thumb:hover 
+{
+  background-color: 	rgba(0, 0, 0, 0.5);
+}
+
+.reef-div::-webkit-scrollbar-thumb:active 
+{
+  background-color: 	rgba(0, 0, 0, 0.7);
+}
+
+.reef-image
+{
+	width: 				100%;
+	height: 			auto;
+	object-fit: 		contain;
+	object-position: 	top;
+	border-radius: 		10px;
+	overflow: 			hidden;
+}
+	
+table
+{
+	width: 				100%;
+	height: 			100%;
+	border-collapse: 	collapse;
+	text-align: 		center;
+}
+
+.td_main_dsiplay
+{
+	height: 	calc(100% - 108px);
+}
+
+.button-container 
+{
+	position: 			fixed;
+	bottom: 			0;
+	left: 				50%;
+	height:				108px;
+	width:				100%;
+	transform:			translateX(-50%);
+	z-index: 			9;
+	background-color: 	rgb(61,69,71);
+	border-top: 		5px solid white;
+	color:				white;
+}
+
+.bottom_button 
+{
+	padding: 10px 20px;
+	background-color: #4285F4;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	font-size: 16px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+	height: 70px;
+}
+
+.blue-value
+{
+	background-color: #1E6EE7;
+	border-radius: 25px;
+	color: white;
+    font-weight: 700;
+	position: absolute;
+	padding: 0;
+	margin: 0;
+	display: inline-block;
+}
+
+.red-value
+{
+	background-color: #DF2525;
+	border-radius: 25px;
+	color: white;
+    font-weight: 700;
+	position: absolute;
+	padding: 0;
+	margin: 0;
+	display: inline-block;
+}
+
+.green-value
+{
+	background-color: #1FA810;
+	border-radius: 25px;
+	color: white;
+    font-weight: 700;
+	position: absolute;
+	padding: 0;
+	margin: 0;
+	display: inline-block;
+}
+
+.yellow-value
+{
+	background-color: #E2DB20;
+	border-radius: 25px;
+	color: white;
+    font-weight: 700;
+	position: absolute;
+	padding: 0;
+	margin: 0;
+	display: inline-block;
+}
+
+.orange-value
+{
+	background-color: #E26120;
+	border-radius: 25px;
+	color: white;
+    font-weight: 700;
+	position: absolute;
+	padding: 0;
+	margin: 0;
+	display: inline-block;
+}
+
+.purple-value
+{
+	background-color: #A820E2;
+	border-radius: 25px;
+	color: white;
+    font-weight: 700;
+	position: absolute;
+	padding: 0;
+	margin: 0;
+	display: inline-block;
+}
+
+.digital
+{
+	justify-content: center;
+  	align-items: center;
+	position: absolute;
+	padding: 10px;
+	margin: 0;
+}
+
+.grey-digital
+{
+	border:5px outset #a0abac;
+	border-radius: 50%;
+  	display: inline-block;
+	background-image: -webkit-linear-gradient(top, #888a89, #ccc9c9);
+	background-image: -moz-linear-gradient(top, #888a89, #ccc9c9);
+	background-image: -ms-linear-gradient(top, #888a89, #ccc9c9);
+	background-image: -o-linear-gradient(top, #888a89, #ccc9c9);
+	background-image: -webkit-gradient(to bottom, #888a89, #ccc9c9);
+	position: relative;
+	left: 50%;
+  	top: 50%;
+  	transform: translate(-50%,-50%);
+	width: 100%;
+	height: 100%;
+}
+
+.blue-digital
+{
+	border:5px outset #a0abac;
+	border-radius: 50%;
+  	display: inline-block;
+	  background-image: radial-gradient(#f1ef61 10%, #f5d102 80%);
+	  box-shadow: 0 0 8px #f1ef61, 0 0 40px #f1ef61, 0 0 70px #f1ef61;
+	position: relative;
+	left: 50%;
+  	top: 50%;
+  	transform: translate(-50%,-50%);
+	width: 100%;
+	height: 100%;
+}
+
+.yellow-digital
+{
+	border:5px outset #a0abac;
+	border-radius: 50%;
+  	display: inline-block;
+	background-image: radial-gradient(#f1ef61 10%, #f5d102 80%);
+	box-shadow: 0 0 8px #f1ef61, 0 0 40px #f1ef61, 0 0 70px #f1ef61;
+	position: relative;
+	left: 50%;
+  	top: 50%;
+  	transform: translate(-50%,-50%);
+	width: 100%;
+	height: 100%;
+}
+
+.warning
+{
+	justify-content: center;
+  	align-items: center;
+	position: absolute;
+	padding: 10px;
+	margin: 0;
+}
+
+.grey-warning
+{
+	border:5px outset #a0abac;
+	border-radius: 50%;
+  	display: inline-block;
+	background-image: -webkit-linear-gradient(top, #888a89, #ccc9c9);
+    background-image: -moz-linear-gradient(top, #888a89, #ccc9c9);
+    background-image: -ms-linear-gradient(top, #888a89, #ccc9c9);
+    background-image: -o-linear-gradient(top, #888a89, #ccc9c9);
+    background-image: -webkit-gradient(to bottom, #888a89, #ccc9c9);
+	position: relative;
+	left: 50%;
+  	top: 50%;
+  	transform: translate(-50%,-50%);
+	width: 100%;
+	height: 100%;
+}
+
+.green-warning
+{
+	border:5px outset #a0abac;
+	border-radius: 50%;
+  	display: inline-block;
+	background-image: radial-gradient(#1bd45c 10%, #0f944f 80%);
+	box-shadow: 0 0 8px #1bd45c, 0 0 40px #1bd45c, 0 0 70px #1bd45c;
+	position: relative;
+	left: 50%;
+  	top: 50%;
+  	transform: translate(-50%,-50%);
+	width: 100%;
+	height: 100%;
+}
+
+.red-warning
+{
+	border:5px outset #a0abac;
+	border-radius: 50%;
+  	display: inline-block;
+	background-image: radial-gradient(#e97957 10%, #c02413 80%);
+	box-shadow: 0 0 8px #e97957, 0 0 40px #e97957, 0 0 70px #e97957;
+	position: relative;
+	left: 50%;
+  	top: 50%;
+  	transform: translate(-50%,-50%);
+	width: 100%;
+	height: 100%;
+}
+
+.border
+{
+	justify-content: center;
+  	align-items: center;
+	position: absolute;
+	padding: 10px;
+	margin: 0;
+}
+
+.white-border
+{
+	border: solid 5px white;
+	border-radius: 10px;
+	background-color: rgb(61,69,71);
+	position: absolute;
+	position: relative;
+  	left: 50%;
+  	top: 50%;
+  	transform: translate(-50%,-50%);
+	width: 100%;
+	height: 100%;
+}
+
+.blue-border
+{
+	border: solid 4px darkblue;
+	background-color: rgb(141, 139, 139);
+	position: relative;
+  	left: 50%;
+  	top: 50%;
+  	transform: translate(-50%,-50%);
+	width: 100%;
+	height: 100%;
+}
+
+.yellow-border
+{
+	border: solid 4px yellowgreen;
+	position: relative;
+  	left: 50%;
+  	top: 50%;
+  	transform: translate(-50%,-50%);
+	width: 100%;
+	height: 100%;
+}
+
+.txt
+{
+	color: white;
+	position: absolute;
+	padding: 0;
+	margin: 0;
+	display: inline-block;
+}
+
+.plot
+{
+	justify-content: center;
+  	align-items: center;
+	position: absolute;
+	padding: 10px;
+	margin: 0;
+	
+}
+
+.line-plot
+{
+	border: solid 5px white;
+	border-radius: 10px;
+	background-color: rgb(61,69,71);
+	position: relative;
+  	left: 50%;
+  	top: 50%;
+  	transform: translate(-50%,-50%);
+	width: 100%;
+	height: 100%;
+}
+
+#main_display 
+{
+	height: 			100%;
+    background-color: 	#fffffff;
+	height: 			100%;
+	box-sizing: 		border-box;
+}
+
+/*Block menu button CSS*/
+.block_menu
+{
+	width:			8.8vw;
+	height:			100px;
+	display:		inline-block;
+	padding-top:	20px;
+}
+.block_menu-button
+{	
+	width: 			100px;
+	height: 		50px;
+	background: 	grey;
+	display: 		inline-block;
+	border-radius: 	50px;
+	outline:		none;
+}
+.block_menu-button:active
+{
+	background:	#bada55
+}
+.block_menu-child
+{
+	width: 			100px;
+	text-align:		center;
+	margin-left:	calc(4.3vw - 50px);
+	padding-top:	5px;
+}
+
+/*Extra menu button CSS*/
+.reef
+{
+	width: 		100px;
+	height:		90px;
+	left:		calc(50vw - 50px);
+	display: 	block;
+	position:	absolute;
+}
+#reef_1
+{
+	top:	15px;
+}
+#reef_2
+{
+	top:	105px;
+}
+#reef_3
+{
+	top:	195px;
+}
+#reef_4
+{
+	top:	285px;
+}
+.reef-button
+{
+	width: 			100px;
+	height: 		50px;
+	position:		absolute;
+	top:			15px;
+	left:			0%;
+	background: 	grey;
+	border-radius: 	50px;
+	outline:		none;
+}
+.reef-child
+{
+	width: 		100px;
+	text-align:	center;
+	color:		white;
+	position:	absolute;
+	bottom:		5px;
+}
+.reef-button:active
+{
+	background:	#bada55
+}

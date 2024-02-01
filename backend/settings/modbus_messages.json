@@ -1,0 +1,23 @@
+{
+    "Request Data": 
+	{
+        "Transaction ID":   {"value": 1,    "bytes": 2},
+        "Protocol ID":      {"value": 0,    "bytes": 2},
+        "Length":           {"value": 6,    "bytes": 2},
+        "Unit ID":          {"value": 0,    "bytes": 1},
+        "Function Code":    {"value": 3,    "bytes": 1},
+        "Register":         {"value": 0,    "bytes": 2},
+        "Data1":            {"value": 98,   "bytes": 2}
+    },
+
+    "Request Errors": 
+	{
+        "Transaction ID":   {"value": 2,    "bytes": 2},
+        "Protocol ID":      {"value": 0,    "bytes": 2},
+        "Length":           {"value": 6,    "bytes": 2},
+        "Unit ID":          {"value": 0,    "bytes": 1},
+        "Function Code":    {"value": 3,    "bytes": 1},
+        "Register":         {"value": 91,   "bytes": 2},
+        "Data1":            {"value": 79,   "bytes": 2}
+    }
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+    <head>
+        <meta http-equiv="Content-Security-Policy" content="script-src 'self';">
+
+        <!-- ADD YOUR STYLESHEETS HERE -->
+        <link rel="stylesheet" type="text/css" href="./css/panel_buttons.css">
+        <link rel="stylesheet" type="text/css" href="./css/sweetalert2.css">
+        <link rel="stylesheet" type="text/css" href="./css/global_styling.css">
+
+        <!-- ALL THE PLUGINS YOU INCLUDE -->
+        <script src="./scripts/imports/chart.min.js"></script>
+        <script src="./scripts/imports/jquery-3.3.1.js"></script>
+		<script src="./scripts/imports/kioskboard-aio-2.3.0.min.js"></script>
+        <script src="./scripts/imports/sweetalert2.js"></script>
+
+        <!-- YOUR CUSTOM SCRIPTS -->  
+        <script src="./settings/websocket_settings.js"></script>
+        <script src="./scripts/websocket_sender.js"></script>
+        <script src="./scripts/run_trend_viewer.js"></script>
+        <script src="./scripts/data_handler.js"></script>
+        <script src="./scripts/plotter.js"></script>
+		<script src="./scripts/scada_app.js"></script>
+        <script src="./scripts/api.js"></script>
+        <script src="./scripts/tag_linker.js"></script>
+        <script src="./scripts/websocket_receiver.js"></script>
+
+        <!-- MY PAGE CONFIGERATIONS -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+        <title>SCADA</title>
+        <link rel="icon" href="images/MDLogo.png" type="image/x-icon">
+    </head>
+    <body>
+		<div id = "main_display"></div>
+		<div class = "button-container">
+			<div id='B-01-menu' class='block_menu'>
+				<button id='B-01' class='block_menu-button' type='button'></button>
+				<div id='B-01-text' class='block_menu-child'>
+					Overview
+				</div>
+			</div>
+			<div id='B-02-menu' class='block_menu'>
+				<button id='B-02' class='block_menu-button' type='button'></button>
+				<div id='B-02-text' class='block_menu-child'>
+					Variables Info
+				</div>
+			</div>
+			<div id='B-03-menu' class='block_menu'>
+				<button id='B-03' class='block_menu-button' type='button'></button>
+				<div id='B-03-text' class='block_menu-child'>
+					Extra Plots
+				</div>
+			</div>
+			<div id='B-04-menu' class='block_menu'>
+				<button id='B-04' class='block_menu-button' type='button'></button>
+				<div id='B-04-text' class='block_menu-child'>
+					Reef Detect
+				</div>
+			</div>
+			<div id='B-05-menu' class='block_menu'>
+				<button id='B-50' class='block_menu-button' type='button'></button>
+				<div id='B-50-text' class='block_menu-child'>
+					Settings
+				</div>
+			</div>
+		</div>
+    </body>
+    <script src="./scripts/events.js"></script>
+</html>

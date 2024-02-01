@@ -1,0 +1,5 @@
+all models/
+node_modules/
+Reef Detection/
+backend/logs/
+backend/settings/default.json

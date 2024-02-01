@@ -1,0 +1,122 @@
+{
+	"Parts": {
+		"(ReefCutter) rbs-fb-090": {
+			"name": 	"(ReefCutter) rbs-fb-090",
+			"displays":	"Cutting Started,Cooling Temp After Cutting Head,Cooling Temp Before Cutting Head,Cutting-Head Supply Line Pressure,Filter Pressure Before Cutting Head,Filter Pressure After Cutting Head,Cutting Head Cooling Motor Pressure,Cutting Head Pressure,Cutting Head Torque,Cutting Head Body X,Cutting Head Body Y,Cutting Head Body Z,Cutting Head Body A,Cutting Head Roll,Cutting Head Tilt",
+			"info":		"Cutting Head"
+		},
+		"(ReefCutter) rbs-fb-298 tl": {
+			"name": 	"(ReefCutter) rbs-fb-298 tl",
+			"displays": "Cutters Rotate Outward,Cutters Rotate Inward,Cutter RPM Top Left",
+			"info":		"Cutter Top Left"
+		},
+		"(ReefCutter) rbs-fb-299 tr": {
+			"name": 	"(ReefCutter) rbs-fb-299 tr",
+			"displays": "Cutters Rotate Outward,Cutters Rotate Inward,Cutter RPM Top Right",
+			"info":		"Cutter Top Right"
+		},
+		"(ReefCutter) rbs-fb-300 bl": {
+			"name": 	"(ReefCutter) rbs-fb-300 bl",
+			"displays": "Cutters Rotate Outward,Cutters Rotate Inward,Cutter RPM Bottom Left",
+			"info":		"Cutter Bottom Left"
+		},
+		"(ReefCutter) rbs-fb-301 br": {
+			"name": 	"(ReefCutter) rbs-fb-301 br",
+			"displays": "Cutters Rotate Outward,Cutters Rotate Inward,Cutter RPM Bottom Right",
+			"info":		"Cutter Bottom Right"
+		},
+		"(ReefCutter) rbs-tb-ga-000": {
+			"name": 	"(ReefCutter) rbs-tb-ga-000",
+			"displays": "Popet Valve Pressure Side,Popet Valve Pressure Top,Line Charge Pressure PT1,Supply Flow Temperature TT3,NG30 Pressure,Supply Line Flow Pressure PT5,Thrust Body Roll,Thrust Body Tilt,Manifold Pressure PT2,Manifold Temperature TT2",
+			"info":		"Thrust Body"
+		},
+		"(ReefCutter) rbs-tc-160-ca-00 l rod": {
+			"name": 	"(ReefCutter) rbs-tc-160-ca-00 l rod",
+			"displays": "Thrust Position Top Left,Thrust Pressure Top Left,Disable Cylinder Distance Interlock,Retract Thrust Cylinders,Extend Thrust Cylinders,Thrust Cylinder Tons Top Left,Avg Thrust Cylinder Tons",
+			"info":		"Cylinder Top Left"
+		},
+		"(ReefCutter) rbs-tc-160-ca-00 r rod": {
+			"name": 	"(ReefCutter) rbs-tc-160-ca-00 r rod",
+			"displays": "Thrust Position Top Right,Thrust Pressure Top Right,Disable Cylinder Distance Interlock,Retract Thrust Cylinders,Extend Thrust Cylinders,Thrust Cylinder Tons Top Right,Avg Thrust Cylinder Tons",
+			"info":		"Cylinder Top Right"
+		},
+		"(ReefCutter) rbs-tc-190-ca-00 l rod": {
+			"name": 	"(ReefCutter) rbs-tc-190-ca-00 l rod",
+			"displays": "Thrust Position Bottom Left,Thrust Pressure Bottom Left,Disable Cylinder Distance Interlock,Retract Thrust Cylinders,Extend Thrust Cylinders,Thrust Cylinder Tons Bottom Left,Avg Thrust Cylinder Tons",
+			"info":		"Cylinder Bottom Left"
+		},
+		"(ReefCutter) rbs-tc-190-ca-00 r rod": {
+			"name": 	"(ReefCutter) rbs-tc-190-ca-00 r rod",
+			"displays": "Thrust Position Bottom Right,Thrust Pressure Bottom Right,Disable Cylinder Distance Interlock,Retract Thrust Cylinders,Extend Thrust Cylinders,Thrust Cylinder Tons Bottom Right,Avg Thrust Cylinder Tons",
+			"info":		"Cylinder Bottom Right"
+		},
+		"(ReefCutter) rbs-tc-160-ca-00 l bar": {
+			"name": 	"(ReefCutter) rbs-tc-160-ca-00 l bar",
+			"displays": "Thrust Position Top Left,Thrust Pressure Top Left,Disable Cylinder Distance Interlock,Retract Thrust Cylinders,Extend Thrust Cylinders,Thrust Cylinder Tons Top Left,Avg Thrust Cylinder Tons",
+			"info":		"Cylinder Top Left"
+		},
+		"(ReefCutter) rbs-tc-160-ca-00 r bar": {
+			"name": 	"(ReefCutter) rbs-tc-160-ca-00 r bar",
+			"displays": "Thrust Position Top Right,Thrust Pressure Top Right,Disable Cylinder Distance Interlock,Retract Thrust Cylinders,Extend Thrust Cylinders,Thrust Cylinder Tons Top Right,Avg Thrust Cylinder Tons",
+			"info":		"Cylinder Top Right"
+		},
+		"(ReefCutter) rbs-tc-190-ca-00 l bar": {
+			"name": 	"(ReefCutter) rbs-tc-190-ca-00 l bar",
+			"displays": "Thrust Position Bottom Left,Thrust Pressure Bottom Left,Disable Cylinder Distance Interlock,Retract Thrust Cylinders,Extend Thrust Cylinders,Thrust Cylinder Tons Bottom Left,Avg Thrust Cylinder Tons",
+			"info":		"Cylinder Bottom Left"
+		},
+		"(ReefCutter) rbs-tc-190-ca-00 r bar": {
+			"name": 	"(ReefCutter) rbs-tc-190-ca-00 r bar",
+			"displays": "Thrust Position Bottom Right,Thrust Pressure Bottom Right,Disable Cylinder Distance Interlock,Retract Thrust Cylinders,Extend Thrust Cylinders,Thrust Cylinder Tons Bottom Right,Avg Thrust Cylinder Tons",
+			"info":		"Cylinder Bottom Right"
+		},
+		"(ReefCutter) rbs-tb-gf-gf-1-fm l": {
+			"name": 	"(ReefCutter) rbs-tb-gf-gf-1-fm l",
+			"displays": "Extend Grippers,Gripper Cylinder PressureB Left,Gripper Cylinder PressureA Left",
+			"info":		"Gripper Left"
+		},
+		"(ReefCutter) rbs-tb-gf-gf-1-fm r": {
+			"name": 	"(ReefCutter) rbs-tb-gf-gf-1-fm r",
+			"displays": "Extend Grippers,Gripper Cylinder PressureB Right,Gripper Cylinder PressureA Right",
+			"info":		"Gripper Right"
+		},
+		"(ReefCutter) rbs-pc-091": {
+			"name": 	"(ReefCutter) rbs-pc-091",
+			"displays": "Extend Plunger,Plunger Retracted,Plunger Pressure",
+			"info":		"Plundger"
+		},
+		"(ReefCutter) rbs-fb-248 l": {
+			"name": 	"(ReefCutter) rbs-fb-248 l",
+			"displays": "Stabilizers Pressure Side Left,Manual Right",
+			"info":		"Stabilizer Side Left"
+		},
+		"(ReefCutter) rbs-fb-248 r": {
+			"name": 	"(ReefCutter) rbs-fb-248 r",
+			"displays": "Stabilizers Pressure Side Right,Manual Left",
+			"info":		"Stabilizer Side Right"
+		},
+		"(ReefCutter) rbs-fb-253 l": {
+			"name": 	"(ReefCutter) rbs-fb-253 l",
+			"displays": "Stabilizers Pressure Top Left,Manual Up,Manual Down,Manual Rotate Left",
+			"info":		"Stabilizer Top Left"
+		},
+		"(ReefCutter) rbs-fb-253 r": {
+			"name": 	"(ReefCutter) rbs-fb-253 r",
+			"displays": "Stabilizers Pressure Top Right,Manual Up,Manual Down,Manual Rotate Right",
+			"info":		"Stabilizer Top Right"
+		}
+	},
+	"Camera": 
+	{
+		"CameraPos": {
+			"x":	10,
+			"y":	-11.9,
+			"z":	20
+		},
+		"CameraTar": {
+			"x":	0,
+			"y":	-1.9,
+			"z":	0
+		}
+	}
+}
