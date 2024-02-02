@@ -6,10 +6,28 @@ const fs 			= require("fs");
 const deffies 		= require("./backend/settings/default.json");
 const path 			= require('path');
 
+// Add deffies for JS applications
 var monitorDT		= deffies.ScreenDT - 1;
 var monitorSC		= deffies.ScreenSC - 1
 var fullDT			= deffies.FullDT;
 var fullSC			= deffies.FullSC;
+
+// Add deffies for Ferdi's Control windows
+var monitorCS1      = deffies.ScreenCS1 - 1;
+var monitorCS2      = deffies.ScreenCS2 - 1;
+var monitorCS3      = deffies.ScreenCS3 - 1;
+var fullCS1         = deffies.FullCS1;
+var fullCS2         = deffies.FullCS2;
+var fullCS3         = deffies.FullCS3;
+
+// Screen number, window mode, url
+var views_setups = [
+    [monitorDT, fullDT, "http://localhost:3004"],
+    [monitorSC, fullSC, "http://localhost:3003"],
+    [monitorCS1, fullCS1, "https://192.168.1.10:8080/webvisu.htm"],
+    [monitorCS2, fullCS2, "https://192.168.1.10:8080/webvisu.htm"],
+    [monitorCS3, fullCS3, "https://192.168.1.10:8080/webvisu.htm"]
+];
 
 require('./backend/scripts/javascript/net_receiver.js');
 require('./backend/scripts/javascript/websocket_receiver.js');
@@ -36,87 +54,49 @@ process.env['ELECTRON_DISABLE_SECURITY_WARNINGS'] = true
 let scadaWindow;
 let dtWindow;
 
-function createWindow() 
-{
+function createWindow() {
 	const displays 			= electron.screen.getAllDisplays();
-	
-	if (fullSC > -1)
-	{
-		var {x,y,width,height} 	= displays[monitorSC].bounds;
-		var fullScreen 			= false;
-		var windowedScreen 		= false;
-	
-		if (fullSC > 0)
-		{ 
-			fullScreen = true;
-			
-			if (fullSC > 1)
-			{
-				windowedScreen = true;
-			}
-		}
-	
-		scadaWindow = new BrowserWindow(
-		{
-			icon:				'frontend/scada_app/images/App_Logo.jpg',
-			width: 				500,
-			height: 			500,
-			autoHideMenuBar: 	windowedScreen,
-			fullscreen: 		fullScreen,
-			x,
-			y,
-			webPreferences: 
-			{
-				nodeIntegration: true,
-			}
-		});
-		
-		scadaWindow.on("closed", function () 
-		{
-			scadaWindow = null;
-		});
-		
-		scadaWindow.loadURL("http://localhost:3003");
-	}
-	
-	if (fullDT > -1)
-	{
-		var {x,y,width,height} 	= displays[monitorDT].bounds;
-		var fullScreen 			= false;
-		var windowedScreen 		= false;
-		
-		if (fullDT > 0)
-		{ 
-			fullScreen = true;
-			
-			if (fullDT > 1)
-			{
-				windowedScreen = true;
-			}
-		}
-		
-		dtWindow = new BrowserWindow(
-		{
-			icon:				'frontend/dt_app/css/Logo.jpg',
-			width: 				500,
-			height: 			500,
-			autoHideMenuBar: 	windowedScreen,
-			fullscreen: 		fullScreen,
-			x,
-			y,
-			webPreferences: 
-			{
-				nodeIntegration: true,
-			}
-		});
+    views_setups.forEach((current_view) => {
+        if (fullSC > -1){
+            var thisWindow;
+		    var {x,y,width,height} 	= displays[current_view[0]].bounds;
+		    var fullScreen 			= false;
+		    var windowedScreen 		= false;
 
-		dtWindow.on("closed", function () 
-		{
-			dtWindow = null;
-		});
-		
-		dtWindow.loadURL("http://localhost:3004");
-	}
+		    if (current_view[1] > 0)
+		    { 
+			    fullScreen = true;
+
+			    if (current_view[1] > 1)
+			    {
+				    windowedScreen = true;
+			    }
+		    }
+
+		    thisWindow = new BrowserWindow(
+		    {
+			    icon:				'frontend/scada_app/images/App_Logo.jpg',
+			    width: 				500,
+			    height: 			500,
+			    autoHideMenuBar: 	windowedScreen,
+			    fullscreen: 		fullScreen,
+			    x,
+			    y,
+			    webPreferences: 
+			    {
+				    nodeIntegration: true,
+			    }
+		    });
+
+		    thisWindow.on("closed", function () 
+		    {
+			    thisWindow = null;
+		    });
+
+		    thisWindow.loadURL(current_view[2]);
+	    }
+    });
+	
 }
 
 app.on("ready", createWindow);
