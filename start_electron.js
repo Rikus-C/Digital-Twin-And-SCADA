@@ -130,38 +130,38 @@ app.on("activate", function ()
 app.allowRendererProcessReuse = true;
 
 function runExecutable() {
-  const exePath = path.join(__dirname, 'Reef Detection/main/main.exe');
-  const cwd = path.dirname(exePath); // Get the directory of main.exe
+    const exePath = path.join(__dirname, 'Reef Detection/main/main.exe');
+    const cwd = path.dirname(exePath); // Get the directory of main.exe
 
-  console.log('Current Path:', __dirname);
-  console.log('Executable Path:', exePath);
+    console.log('Current Path:', __dirname);
+    console.log('Executable Path:', exePath);
 
-  const childProcess = spawn(exePath, [], { cwd: cwd });
+    const childProcess = spawn(exePath, [], { cwd: cwd });
 
-  childProcess.on('error', (error) => {
-    console.error(`Error: ${error.message}`);
-    scadaWindow.webContents.send('exe-result', 'Error running the executable.');
-  });
+    childProcess.on('error', (error) => {
+        console.error(`Error: ${error.message}`);
+        scadaWindow.webContents.send('exe-result', 'Error running the executable.');
+    });
 
-  childProcess.on('exit', (code) => {
-    if (code === 0) {
-      console.log('Execution completed successfully');
-    } else {
-      console.error(`Execution exited with code ${code}`);
-      scadaWindow.webContents.send('exe-result', `Execution exited with code ${code}`);
-    }
-  });
+    childProcess.on('exit', (code) => {
+        if (code === 0) {
+            console.log('Execution completed successfully');
+        } else {
+            console.error(`Execution exited with code ${code}`);
+            scadaWindow.webContents.send('exe-result', `Execution exited with code ${code}`);
+        }
+    });
 
-  // Optional: Listen to the child process output (stdout and stderr) if needed
-  childProcess.stdout.on('data', (data) => {
-    console.log(`stdout: ${data}`);
-    scadaWindow.webContents.send('exe-result', data);
-  });
+    // Optional: Listen to the child process output (stdout and stderr) if needed
+    childProcess.stdout.on('data', (data) => {
+        console.log(`stdout: ${data}`);
+        scadaWindow.webContents.send('exe-result', data);
+    });
 
-  childProcess.stderr.on('data', (data) => {
-    console.error(`stderr: ${data}`);
-    scadaWindow.webContents.send('exe-result', data);
-  });
+    childProcess.stderr.on('data', (data) => {
+        console.error(`stderr: ${data}`);
+        scadaWindow.webContents.send('exe-result', data);
+    });
 }
 
 ipcMain.on('run-exe', () => {
