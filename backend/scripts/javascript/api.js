@@ -212,13 +212,33 @@ api.ReadFrontendMessage = (msg) =>
 	}
 }
 
+function GetRandomNumber(){
+    // Generate a random number between 0 and 2
+    var randomNumber = Math.random() * 2;
+    // Shift the random number to be between -1 and 1
+    return randomNumber -= 1;
+}
+
 /*Sends the default data and error tags periodically*/
 function dummyPLC() 
 {
-	webSocketSender.Send({"type": "PLC Data Push", 	"spec": "", "data": rawDataTags});
+    try{ 
+        rawDataTags["Thrust Cylinder Tons Top Right"]["value"] += GetRandomNumber();
+        if (rawDataTags["Thrust Cylinder Tons Top Right"]["value"] <= 0.1) rawDataTags["Thrust Cylinder Tons Top Right"]["value"] += 5;
+        rawDataTags["Thrust Cylinder Tons Top Left"]["value"] += GetRandomNumber();
+        if (rawDataTags["Thrust Cylinder Tons Top Left"]["value"] <= 0) rawDataTags["Thrust Cylinder Tons Top Left"]["value"] += 5;
+        rawDataTags["Thrust Cylinder Tons Bottom Right"]["value"] += GetRandomNumber();
+        if (rawDataTags["Thrust Cylinder Tons Bottom Right"]["value"] <= 0) rawDataTags["Thrust Cylinder Tons Bottom Right"]["value"] += 5;
+        rawDataTags["Thrust Cylinder Tons Bottom Left"]["value"] += GetRandomNumber();
+        if (rawDataTags["Thrust Cylinder Tons Bottom Left"]["value"] <= 0) rawDataTags["Thrust Cylinder Tons Bottom Left"]["value"] += 5; 
+    } catch (err){
+        throw err;
+    } 
+    
+    webSocketSender.Send({"type": "PLC Data Push", 	"spec": "", "data": rawDataTags});
 	webSocketSender.Send({"type": "PLC Error Push", "spec": "", "data": rawErrorTags});
 }
 
-var dummyTime = setInterval(dummyPLC, 200);
+var dummyTime = setInterval(dummyPLC, 500);
 
 module.exports = api;
