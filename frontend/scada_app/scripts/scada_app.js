@@ -1142,7 +1142,7 @@ const AddNewElementToPage = async () =>
 /*Button presses on reef detect page*/
 const ReefButton = (btnID) =>
 {
-	var btn 				= document.getElementById('reef_'+btnID+'-button');
+	var btn = document.getElementById('reef_'+btnID+'-button');
 	
 	switch (parseInt(btnID))
 	{
@@ -1156,5 +1156,3 @@ const ReefButton = (btnID) =>
 				break;
 	}
 }
-
-
