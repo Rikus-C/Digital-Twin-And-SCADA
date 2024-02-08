@@ -1,4 +1,4 @@
-const fs            	= require("fs");
+// const fs            	= require("fs");
 var activeView = document.getElementById("main_display");
 
 const ViewClicked = (element) => 
@@ -52,9 +52,3 @@ document.addEventListener('keyup', async (event) =>
 		else EditElementsProperties(event.key);
 	}
 });
-
-document.getElementById("B-01").addEventListener("click", () => {LoadNewView("overview");});
-document.getElementById("B-02").addEventListener("click", () => {LoadNewView("variables");});
-document.getElementById("B-03").addEventListener("click", () => {LoadNewView("plots");});
-document.getElementById("B-04").addEventListener("click", () => {LoadNewView("plots");});
-document.getElementById("B-05").addEventListener("click", () => {LoadNewView("plots");});
