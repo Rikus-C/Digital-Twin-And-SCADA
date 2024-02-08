@@ -55,4 +55,41 @@ scadaEditor.ReturnLayout = (msg) =>
     });
 }
 
+scadaEditor.SendBackLayoutFileNamesAndOrder = () => {
+    // Get names of all layout JSON files
+    fs.readdir("./backend/settings/layouts/", (err, files) => {
+        if (err) return;
+
+        files.forEach((fileName, index) => {
+            files[index] = fileName.replace(".json", "");
+        }); 
+
+        // Send back JSON file content of menu button orders
+        fs.readFile("./backend/settings/SCADA_button_order.json", 'utf8', (err, data) => {
+            if (err) return;
+            try {
+                // Parse the JSON data into a JavaScript object
+                var jsonData = JSON.parse(data);
+
+                webSocket.Send({
+                    type: "Menu Page Names And Order",
+                    menuNames: files,
+                    menuOrder: jsonData["Page Order"]
+                });
+            } catch {return};     
+        }); 
+    });
+}
+
 module.exports = scadaEditor;
+
+
+
+
+
+
+
+
+
+
+

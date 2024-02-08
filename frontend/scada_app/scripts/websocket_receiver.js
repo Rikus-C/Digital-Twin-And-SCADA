@@ -1,6 +1,6 @@
 webSocket.addEventListener("open", () => 
 {
-	LoadNewView("overview");
+	
 });
 
 webSocket.addEventListener("message", (msg) => 

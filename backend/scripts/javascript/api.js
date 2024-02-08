@@ -195,6 +195,10 @@ api.ReadFrontendMessage = (msg) =>
     {
         pythonSender.SendData(msg);
     }
+    else if (msg.type === "Get Menu Settings") {
+        // Send back json object of page layout names
+        scadaEditor.SendBackLayoutFileNamesAndOrder();
+    }
     else if (msg.type === "Image Data") 
     {
 		  if (msg.data === "Start")
