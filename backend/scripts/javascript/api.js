@@ -199,16 +199,25 @@ api.ReadFrontendMessage = (msg) =>
         // Send back json object of page layout names
         scadaEditor.SendBackLayoutFileNamesAndOrder();
     }
+    else if (msg.type === "Update Menu Order List") {
+        scadaEditor.UpdateMenuOrderList(msg.data); 
+    } 
+    else if (msg.type === "Add New Menu Button") { 
+        scadaEditor.AddNewMenuButton(msg.data); 
+    }
+    else if (msg.type === "Delete Menu Button") {
+        scadaEditor.DeleteMenuButton(msg.data); 
+    }
     else if (msg.type === "Image Data") 
     {
-		  if (msg.data === "Start")
-		  {
-			  StartDetect();
-		  }
-		  else
-		  {
-			  pythonSender.CaseData(msg);
-		  }
+		if (msg.data === "Start")
+		{
+			StartDetect();
+		}
+		else
+		{
+			pythonSender.CaseData(msg);
+		}
     }
 	else if(msg.type === "show trends")
 	{

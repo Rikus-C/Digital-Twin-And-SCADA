@@ -81,6 +81,49 @@ scadaEditor.SendBackLayoutFileNamesAndOrder = () => {
     });
 }
 
+scadaEditor.UpdateMenuOrderList = (newList) => {
+    // Convert the new data to JSON format
+    const jsonData = JSON.stringify({"Page Order": newList}, null, 2); // The second argument is for pretty printing with indentation
+
+    // Write data to the file
+    fs.writeFile("./backend/settings/SCADA_button_order.json", jsonData, (err) => {
+        if (err) return;
+        // Sned to frontend that save was made
+        scadaEditor.SendBackLayoutFileNamesAndOrder();
+    });
+}
+
+scadaEditor.AddNewMenuButton = (name) => {
+    // Write data to the file
+    const jsonString = JSON.stringify({"elements": []}, null, 2);
+    fs.writeFile("./backend/settings/layouts/" + name + ".json", jsonString, (err) => {
+        if (err) return;
+        // Read button order list
+        fs.readFile("./backend/settings/SCADA_button_order.json", 'utf8', (err, data) => {
+            if (err) return;
+            try {
+                // Parse the JSON data
+                var jsonData = JSON.parse(data);
+                jsonData["Page Order"].push(name);
+                var jsonString = JSON.stringify(jsonData, null, 2); 
+                // Update the button order list
+                fs.writeFile("./backend/settings/SCADA_button_order.json", jsonString, (err) => {
+                    if (err) return;
+                    scadaEditor.SendBackLayoutFileNamesAndOrder();
+                }); 
+            } catch {return}            
+        });
+    });
+} 
+
+scadaEditor.DeleteMenuButton = (name) => { 
+    // Delete the file
+    fs.unlink("./backend/settings/layouts/" + name + ".json", (err) => {
+        if (err) return;
+        scadaEditor.SendBackLayoutFileNamesAndOrder(); 
+    });
+}
+
 module.exports = scadaEditor;
 
 

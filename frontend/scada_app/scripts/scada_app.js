@@ -965,7 +965,10 @@ const EditElementsProperties = (key) =>
 
   /*if user wants to edit properties of elements*/
   else if (key === "q") ActivateStickyMouse();
-    
+
+  /*used for editing the menu buttons*/
+  else if (key === "f" || key === "g" || key === "v") UpdateMenu(key);
+
   /*if no valid edit key was pressed*/
   else return;
 
