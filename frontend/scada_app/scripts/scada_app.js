@@ -1084,9 +1084,11 @@ const AddNewElementToPage = async () =>
     
   .then((result) => 
   {
+      swalBusy = false;
     /**/
     if (result.isConfirmed) 
     {
+        swalBusy = true;
       newElementInfo.type = newElementType[result.value];
 
       Swal.fire(

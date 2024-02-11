@@ -57,7 +57,7 @@ scadaEditor.ReturnLayout = (msg) =>
 
 scadaEditor.SendBackLayoutFileNamesAndOrder = () => {
     // Get names of all layout JSON files
-    fs.readdir("./backend/settings/layouts/", (err, files) => {
+    fs.readdir("./backend/settings/layouts/", (err, files) => { 
         if (err) return;
 
         files.forEach((fileName, index) => {
@@ -70,6 +70,9 @@ scadaEditor.SendBackLayoutFileNamesAndOrder = () => {
             try {
                 // Parse the JSON data into a JavaScript object
                 var jsonData = JSON.parse(data);
+                
+                console.log("Actual files: ", files);
+                console.log("Order list : ", jsonData["Page Order"]);
 
                 webSocket.Send({
                     type: "Menu Page Names And Order",
@@ -82,6 +85,7 @@ scadaEditor.SendBackLayoutFileNamesAndOrder = () => {
 }
 
 scadaEditor.UpdateMenuOrderList = (newList) => {
+    console.log(newList);
     // Convert the new data to JSON format
     const jsonData = JSON.stringify({"Page Order": newList}, null, 2); // The second argument is for pretty printing with indentation
 

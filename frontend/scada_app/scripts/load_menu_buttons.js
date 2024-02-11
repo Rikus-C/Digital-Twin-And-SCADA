@@ -8,25 +8,23 @@ function removeElementFromArray(array, elementToRemove) {
     return newArray;
 }
 
-function GenerateMenuButtons(menuNames, menuOrder) { 
+function GenerateMenuButtons(menuNames, menuOrder) {
     // Makes sure the settings file match
-    if ((menuNames.length !== menuOrder.length) || (menuNames.length === 0)) {
-        // Change menu order list to file list
-        menuOrder = menuNames;
+    if (menuNames.length !== menuOrder.length) { 
         // Save the new menu order list to backend
-        webSocket.Send({type: "Update Menu Order List", data: menuOrder});
-        
+        webSocket.Send({type: "Update Menu Order List", data: menuNames});
+        return;
     } 
     
     else {  
-        for (var x = 0; x < menuNames.length; x++) {
-            if (!menuNames[x].indexOf(menuOrder)) {
-                menuOrder = menuNames;
-                // Save the new menu order list to backend
-                webSocket.Send({type: "Update Menu Order List", data: menuOrder});
-                break;
-            }
-        }
+        var namesSorted = menuNames.slice().sort();
+        var orderSorted = menuOrder.slice().sort();
+        if (namesSorted !== orderSorted) { // Some really spooky shit is wrong with this part
+            // menuOrder = menuNames;
+            // Save the new menu order list to backend
+            // webSocket.Send({type: "Update Menu Order List", data: menuNames});
+            // return;
+        } 
     }
 
     currentMenuNames = menuNames;
@@ -106,7 +104,7 @@ function UpdateMenu(key) {
             swalBusy = false; 
 
             if (result.isConfirmed) {
-                if (!toDelete.indexOf(currentMenuNames)) return;
+                //if (!toDelete.indexOf(currentMenuNames)) return;
                 webSocket.Send({type: "Delete Menu Button", data: toDelete});
             }
         });
@@ -151,11 +149,22 @@ function UpdateMenu(key) {
                         if (position <= 0) position = 1;
 
                         var list = removeElementFromArray(currentMenuNames, toMove);
-                        var  newList = [
-                            ...list.slice(0, position-1),
-                            toMove,
-                            ...list.slice(position-1)
-                        ];
+                        
+                        var newList = [];
+                        // add statements for edge cases
+                        if (position == 1) newList = [toMove, ...list]; 
+                        else if (position == currentMenuNames.length) newList = [...list, toMove];
+                        else {
+                            for (var x = 0; x < list.length; x++) {
+                                if (x != position-1) {
+                                    newList.push(list[x]);
+                                } else {
+                                    newList.push(toMove);
+                                    newList.push(list[x]);
+                                }
+                            } 
+                        }
+
                         webSocket.Send({type: "Update Menu Order List", data: newList});
                     }
                 });
