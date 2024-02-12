@@ -19,8 +19,7 @@ function GenerateMenuButtons(menuNames, menuOrder) {
     else {  
         var namesSorted = menuNames.slice().sort();
         var orderSorted = menuOrder.slice().sort();
-        if (namesSorted !== orderSorted) { // Some really spooky shit is wrong with this part
-            // menuOrder = menuNames;
+        if (namesSorted !== orderSorted) { // Some really spooky shit is wrong with this part 
             // Save the new menu order list to backend
             // webSocket.Send({type: "Update Menu Order List", data: menuNames});
             // return;
@@ -164,13 +163,54 @@ function UpdateMenu(key) {
                                 }
                             } 
                         }
-
                         webSocket.Send({type: "Update Menu Order List", data: newList});
                     }
                 });
             }
         });
-    } 
+    }
+
+    else if (key === "t") {
+        var toRename;  
+        Swal.fire({
+            title: "Name of Page Button to Rename",
+            input: "text",
+            inputAttributes: {
+                autocapitalize: "off"
+            },
+            showCancelButton: true,
+            confirmButtonText: "Select",
+            showLoaderOnConfirm: true,
+            allowOutsideClick: false,
+            preConfirm: async (someName) => {toRename = someName}
+        }).then((result) => {
+            swalBusy = false;
+            // Ensure page does exists 
+            if (!toRename.indexOf(currentMenuNames)) return;
+
+            if (result.isConfirmed) {
+                swalBusy = true;
+                Swal.fire({
+                    title: "New Name?",
+                    input: "text",
+                    inputAttributes: {
+                        autocapitalize: "off"
+                    },
+                    showCancelButton: true,
+                    confirmButtonText: "Rename",
+                    showLoaderOnConfirm: true,
+                    allowOutsideClick: false,
+                    preConfirm: async (newName) => {newButName = newName}
+                }).then((innerResult) => {
+                    swalBusy = false;
+                    if (innerResult.isConfirmed) { 
+                        if (newButName.length > 0)
+                            webSocket.Send({type: "Rename Menu Button", data: [toRename, newButName]});
+                    }
+                });
+            }
+        });
+    }
 }
 
 setTimeout(()=>{webSocket.Send({type: "Get Menu Settings"});}, 2000);

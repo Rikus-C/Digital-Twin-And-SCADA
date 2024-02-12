@@ -128,6 +128,31 @@ scadaEditor.DeleteMenuButton = (name) => {
     });
 }
 
+scadaEditor.RenameMenuButton = (names) => {
+    const dir = "./backend/settings/layouts/"; 
+    fs.rename(dir + names[0] + ".json", dir + names[1] + ".json", (err) => {
+        if (err) return;
+        // Read button order list
+        fs.readFile("./backend/settings/SCADA_button_order.json", 'utf8', (err, data) => {
+            if (err) return;
+            try {
+                // Parse the JSON data
+                var jsonData = JSON.parse(data);
+                // Update name in menu order list
+                jsonData["Page Order"] = jsonData["Page Order"].map(item => (item === names[0] ? names[1] : item));
+                var jsonString = JSON.stringify(jsonData, null, 2); 
+                // Update the button order list
+                fs.writeFile("./backend/settings/SCADA_button_order.json", jsonString, (err) => {
+                    if (err) return;
+                    scadaEditor.SendBackLayoutFileNamesAndOrder();
+                }); 
+            } catch {return}            
+        }); 
+    });
+}
+
+scadaEditor.SendBackLayoutFileNamesAndOrder();
+
 module.exports = scadaEditor;
 
 

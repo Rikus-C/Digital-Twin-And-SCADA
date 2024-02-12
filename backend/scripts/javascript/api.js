@@ -208,6 +208,9 @@ api.ReadFrontendMessage = (msg) =>
     else if (msg.type === "Delete Menu Button") {
         scadaEditor.DeleteMenuButton(msg.data); 
     }
+    else if (msg.type === "Rename Menu Button") {
+        scadaEditor.RenameMenuButton(msg.data);
+    }
     else if (msg.type === "Image Data") 
     {
 		if (msg.data === "Start")
